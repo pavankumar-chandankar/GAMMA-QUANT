@@ -24,13 +24,13 @@ FREQ_FOR_CLASS: List[str] = [
     "12hz",  # 9: lunges (complex)
     "25hz",  # 10: push-ups
     "25hz",  # 11: push-ups (complex)
-    "25hz",  # 12: sit-ups
+    "12hz",  # 12: sit-ups
     "12hz",  # 13: sit-ups (complex)
     "6hz",   # 14: stretching (hamstrings)
     "6hz",   # 15: stretching (lumbar rotation)
-    "12hz",  # 16: stretching (lunging)
-    "12hz",  # 17: stretching (shoulders)
-    "12hz",  # 18: stretching (triceps)
+    "6hz",  # 16: stretching (lunging)
+    "6hz",  # 17: stretching (shoulders)
+    "6hz",  # 18: stretching (triceps)
 ]
 
 
