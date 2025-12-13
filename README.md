@@ -1,4 +1,4 @@
-# γ-Quant: Towards Learnable Quantization for Low-bit Pattern Recognition
+# γ-Quant
 ## Inertial Experiments
 
 This folder contains all relevant files to reproduce experiments mentioned within Section 4 of the main paper (i.e. all experiments using inertial data as input).
