@@ -1,0 +1,6 @@
+neptune==1.13.0
+scikit-learn==1.6.1
+matplotlib==3.10.1
+einops==0.8.1
+tqdm==4.67.1 
+seaborn==0.13.2

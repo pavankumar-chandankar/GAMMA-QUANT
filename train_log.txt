@@ -1,0 +1,2380 @@
+Split 1 / 22
+Training data shape: (3214625, 14)
+Validation data shape: (251775, 14)
+Min/ Max values in training data: [-1.00, 1.00]
+Min/ Max values in validation data: [-1.00, 1.00]
+Number of learnable parameters for DeepConvLSTM: 487189
+DeepConvLSTM(
+  (conv1): Conv2d(1, 64, kernel_size=(2, 1), stride=(1, 1))
+  (conv2): Conv2d(64, 64, kernel_size=(2, 1), stride=(1, 1))
+  (conv3): Conv2d(64, 64, kernel_size=(2, 1), stride=(1, 1))
+  (conv4): Conv2d(64, 64, kernel_size=(2, 1), stride=(1, 1))
+  (lstm): LSTM(768, 128)
+  (dropout): Dropout(p=0.5, inplace=False)
+  (classifier): Linear(in_features=128, out_features=19, bias=True)
+  (activation): ReLU()
+  (gamma_function): gammaFunction()
+  (quantizer): UniformQuantizerSTE()
+)
+Class weights: [0.12827821 1.77041964 1.58894814 1.54303785 1.74085345 1.7191485
+ 1.52517707 1.64029398 1.61045598 1.56509165 1.70053817 1.58017729
+ 1.58217224 1.50716092 1.58890337 1.59890412 1.50198278 1.62292289
+ 1.59312261]
+Epoch: [001/030]
+TRAINING:	avg. loss 1.3755
+VALIDATION:	avg. loss 1.4974
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 54.67 (%) Prec 49.63 (%) Rec 54.67 (%) F1 49.16 (%)
+New best F1 49.16% at epoch 1, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_0/best_loso_sbj_0.pth.tar
+Epoch: [002/030]
+TRAINING:	avg. loss 1.0897
+VALIDATION:	avg. loss 1.4286
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 55.79 (%) Prec 50.23 (%) Rec 55.79 (%) F1 50.40 (%)
+New best F1 50.40% at epoch 2, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_0/best_loso_sbj_0.pth.tar
+Epoch: [003/030]
+TRAINING:	avg. loss 1.0100
+VALIDATION:	avg. loss 1.4415
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 56.07 (%) Prec 50.91 (%) Rec 56.07 (%) F1 50.82 (%)
+New best F1 50.82% at epoch 3, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_0/best_loso_sbj_0.pth.tar
+Epoch: [004/030]
+TRAINING:	avg. loss 0.9673
+VALIDATION:	avg. loss 1.4347
+		Avg. mAP 0.01 (%) mAP@0.3 0.02 (%) mAP@0.4 0.01 (%) mAP@0.5 0.01 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 57.52 (%) Prec 51.45 (%) Rec 57.52 (%) F1 51.86 (%)
+New best F1 51.86% at epoch 4, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_0/best_loso_sbj_0.pth.tar
+Epoch: [005/030]
+TRAINING:	avg. loss 0.9378
+VALIDATION:	avg. loss 1.4440
+		Avg. mAP 0.00 (%) mAP@0.3 0.01 (%) mAP@0.4 0.01 (%) mAP@0.5 0.01 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 56.93 (%) Prec 52.43 (%) Rec 56.93 (%) F1 51.84 (%)
+Epoch: [006/030]
+TRAINING:	avg. loss 0.9165
+VALIDATION:	avg. loss 1.4346
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 57.88 (%) Prec 53.46 (%) Rec 57.88 (%) F1 53.63 (%)
+New best F1 53.63% at epoch 6, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_0/best_loso_sbj_0.pth.tar
+Epoch: [007/030]
+TRAINING:	avg. loss 0.8979
+VALIDATION:	avg. loss 1.4352
+		Avg. mAP 0.01 (%) mAP@0.3 0.02 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 56.68 (%) Prec 51.45 (%) Rec 56.68 (%) F1 51.34 (%)
+Epoch: [008/030]
+TRAINING:	avg. loss 0.8825
+VALIDATION:	avg. loss 1.4411
+		Avg. mAP 0.00 (%) mAP@0.3 0.02 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 55.24 (%) Prec 51.49 (%) Rec 55.24 (%) F1 51.03 (%)
+Epoch: [009/030]
+TRAINING:	avg. loss 0.8697
+VALIDATION:	avg. loss 1.4265
+		Avg. mAP 0.00 (%) mAP@0.3 0.01 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 57.95 (%) Prec 53.31 (%) Rec 57.95 (%) F1 52.92 (%)
+Epoch: [010/030]
+TRAINING:	avg. loss 0.8585
+VALIDATION:	avg. loss 1.4421
+		Avg. mAP 0.00 (%) mAP@0.3 0.02 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 56.52 (%) Prec 51.73 (%) Rec 56.52 (%) F1 51.61 (%)
+Epoch: [011/030]
+TRAINING:	avg. loss 0.8470
+VALIDATION:	avg. loss 1.4442
+		Avg. mAP 0.00 (%) mAP@0.3 0.02 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 55.58 (%) Prec 51.76 (%) Rec 55.58 (%) F1 51.38 (%)
+Epoch: [012/030]
+TRAINING:	avg. loss 0.8382
+VALIDATION:	avg. loss 1.4626
+		Avg. mAP 0.00 (%) mAP@0.3 0.02 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 57.93 (%) Prec 53.12 (%) Rec 57.93 (%) F1 52.71 (%)
+Epoch: [013/030]
+TRAINING:	avg. loss 0.8307
+VALIDATION:	avg. loss 1.4760
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 56.91 (%) Prec 52.17 (%) Rec 56.91 (%) F1 52.00 (%)
+Epoch: [014/030]
+TRAINING:	avg. loss 0.8246
+VALIDATION:	avg. loss 1.4771
+		Avg. mAP 0.00 (%) mAP@0.3 0.01 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 58.57 (%) Prec 52.80 (%) Rec 58.57 (%) F1 52.87 (%)
+Epoch: [015/030]
+TRAINING:	avg. loss 0.8177
+VALIDATION:	avg. loss 1.4402
+		Avg. mAP 0.00 (%) mAP@0.3 0.01 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 56.95 (%) Prec 53.61 (%) Rec 56.95 (%) F1 52.90 (%)
+Epoch: [016/030]
+TRAINING:	avg. loss 0.8116
+VALIDATION:	avg. loss 1.4451
+		Avg. mAP 0.00 (%) mAP@0.3 0.01 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 58.59 (%) Prec 54.32 (%) Rec 58.59 (%) F1 54.42 (%)
+New best F1 54.42% at epoch 16, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_0/best_loso_sbj_0.pth.tar
+Epoch: [017/030]
+TRAINING:	avg. loss 0.8064
+VALIDATION:	avg. loss 1.4720
+		Avg. mAP 0.00 (%) mAP@0.3 0.01 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 57.76 (%) Prec 53.02 (%) Rec 57.76 (%) F1 52.69 (%)
+Epoch: [018/030]
+TRAINING:	avg. loss 0.8022
+VALIDATION:	avg. loss 1.4532
+		Avg. mAP 0.00 (%) mAP@0.3 0.01 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 58.17 (%) Prec 52.73 (%) Rec 58.17 (%) F1 53.06 (%)
+Epoch: [019/030]
+TRAINING:	avg. loss 0.7970
+VALIDATION:	avg. loss 1.4611
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 57.36 (%) Prec 52.14 (%) Rec 57.36 (%) F1 52.49 (%)
+Epoch: [020/030]
+TRAINING:	avg. loss 0.7914
+VALIDATION:	avg. loss 1.4148
+		Avg. mAP 0.00 (%) mAP@0.3 0.01 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 58.68 (%) Prec 53.77 (%) Rec 58.68 (%) F1 53.80 (%)
+Epoch: [021/030]
+TRAINING:	avg. loss 0.7861
+VALIDATION:	avg. loss 1.4732
+		Avg. mAP 0.00 (%) mAP@0.3 0.01 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 57.20 (%) Prec 52.14 (%) Rec 57.20 (%) F1 52.37 (%)
+Epoch: [022/030]
+TRAINING:	avg. loss 0.7817
+VALIDATION:	avg. loss 1.4380
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 58.03 (%) Prec 53.34 (%) Rec 58.03 (%) F1 53.33 (%)
+Epoch: [023/030]
+TRAINING:	avg. loss 0.7782
+VALIDATION:	avg. loss 1.4538
+		Avg. mAP 0.00 (%) mAP@0.3 0.01 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 58.76 (%) Prec 54.03 (%) Rec 58.76 (%) F1 53.74 (%)
+Epoch: [024/030]
+TRAINING:	avg. loss 0.7752
+VALIDATION:	avg. loss 1.4596
+		Avg. mAP 0.00 (%) mAP@0.3 0.01 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 58.44 (%) Prec 52.99 (%) Rec 58.44 (%) F1 53.25 (%)
+Epoch: [025/030]
+TRAINING:	avg. loss 0.7707
+VALIDATION:	avg. loss 1.4728
+		Avg. mAP 0.00 (%) mAP@0.3 0.01 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 58.46 (%) Prec 53.90 (%) Rec 58.46 (%) F1 53.65 (%)
+Epoch: [026/030]
+TRAINING:	avg. loss 0.7680
+VALIDATION:	avg. loss 1.4742
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 58.68 (%) Prec 53.52 (%) Rec 58.68 (%) F1 53.43 (%)
+Epoch: [027/030]
+TRAINING:	avg. loss 0.7648
+VALIDATION:	avg. loss 1.4572
+		Avg. mAP 0.00 (%) mAP@0.3 0.01 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 58.58 (%) Prec 53.22 (%) Rec 58.58 (%) F1 53.44 (%)
+Epoch: [028/030]
+TRAINING:	avg. loss 0.7618
+VALIDATION:	avg. loss 1.4618
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 59.00 (%) Prec 53.59 (%) Rec 59.00 (%) F1 53.66 (%)
+Epoch: [029/030]
+TRAINING:	avg. loss 0.7586
+VALIDATION:	avg. loss 1.4577
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 58.41 (%) Prec 53.32 (%) Rec 58.41 (%) F1 53.52 (%)
+Epoch: [030/030]
+TRAINING:	avg. loss 0.7569
+VALIDATION:	avg. loss 1.4753
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 59.04 (%) Prec 54.38 (%) Rec 59.04 (%) F1 54.94 (%)
+New best F1 54.94% at epoch 30, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_0/best_loso_sbj_0.pth.tar
+
+FINAL RESULTS SUBJECT 0
+TRAINING:	avg. loss 0.86
+VALIDATION:	avg. loss 1.45
+
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) 
+		Acc 59.04 (%) Prec 54.38 (%) Rec 59.04 (%) F1 54.94 (%)
+
+Split 2 / 22
+Training data shape: (3327500, 14)
+Validation data shape: (138900, 14)
+Min/ Max values in training data: [-1.00, 1.00]
+Min/ Max values in validation data: [-1.00, 1.00]
+Number of learnable parameters for DeepConvLSTM: 487189
+DeepConvLSTM(
+  (conv1): Conv2d(1, 64, kernel_size=(2, 1), stride=(1, 1))
+  (conv2): Conv2d(64, 64, kernel_size=(2, 1), stride=(1, 1))
+  (conv3): Conv2d(64, 64, kernel_size=(2, 1), stride=(1, 1))
+  (conv4): Conv2d(64, 64, kernel_size=(2, 1), stride=(1, 1))
+  (lstm): LSTM(768, 128)
+  (dropout): Dropout(p=0.5, inplace=False)
+  (classifier): Linear(in_features=128, out_features=19, bias=True)
+  (activation): ReLU()
+  (gamma_function): gammaFunction()
+  (quantizer): UniformQuantizerSTE()
+)
+Class weights: [0.131832   1.72330432 1.54792137 1.44804928 1.70334132 1.66872136
+ 1.46896526 1.60278989 1.55439251 1.50513641 1.69154478 1.61155096
+ 1.54138177 1.53898422 1.58460356 1.54985293 1.50041666 1.63726961
+ 1.57438941]
+Epoch: [001/030]
+TRAINING:	avg. loss 1.3690
+VALIDATION:	avg. loss 1.4795
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 60.62 (%) Prec 52.97 (%) Rec 60.62 (%) F1 53.82 (%)
+New best F1 53.82% at epoch 1, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_1/best_loso_sbj_1.pth.tar
+Epoch: [002/030]
+TRAINING:	avg. loss 1.0816
+VALIDATION:	avg. loss 1.4534
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 61.41 (%) Prec 54.20 (%) Rec 61.41 (%) F1 54.64 (%)
+New best F1 54.64% at epoch 2, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_1/best_loso_sbj_1.pth.tar
+Epoch: [003/030]
+TRAINING:	avg. loss 1.0077
+VALIDATION:	avg. loss 1.4302
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 62.09 (%) Prec 53.89 (%) Rec 62.09 (%) F1 54.80 (%)
+New best F1 54.80% at epoch 3, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_1/best_loso_sbj_1.pth.tar
+Epoch: [004/030]
+TRAINING:	avg. loss 0.9671
+VALIDATION:	avg. loss 1.3959
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 61.59 (%) Prec 54.22 (%) Rec 61.59 (%) F1 55.04 (%)
+New best F1 55.04% at epoch 4, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_1/best_loso_sbj_1.pth.tar
+Epoch: [005/030]
+TRAINING:	avg. loss 0.9392
+VALIDATION:	avg. loss 1.3899
+		Avg. mAP 0.00 (%) mAP@0.3 0.01 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 61.94 (%) Prec 54.24 (%) Rec 61.94 (%) F1 55.19 (%)
+New best F1 55.19% at epoch 5, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_1/best_loso_sbj_1.pth.tar
+Epoch: [006/030]
+TRAINING:	avg. loss 0.9181
+VALIDATION:	avg. loss 1.3691
+		Avg. mAP 0.00 (%) mAP@0.3 0.02 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 61.07 (%) Prec 56.78 (%) Rec 61.07 (%) F1 55.61 (%)
+New best F1 55.61% at epoch 6, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_1/best_loso_sbj_1.pth.tar
+Epoch: [007/030]
+TRAINING:	avg. loss 0.8997
+VALIDATION:	avg. loss 1.3899
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 61.50 (%) Prec 54.58 (%) Rec 61.50 (%) F1 54.93 (%)
+Epoch: [008/030]
+TRAINING:	avg. loss 0.8866
+VALIDATION:	avg. loss 1.3555
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 62.55 (%) Prec 56.90 (%) Rec 62.55 (%) F1 57.10 (%)
+New best F1 57.10% at epoch 8, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_1/best_loso_sbj_1.pth.tar
+Epoch: [009/030]
+TRAINING:	avg. loss 0.8738
+VALIDATION:	avg. loss 1.3859
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 58.90 (%) Prec 53.81 (%) Rec 58.90 (%) F1 53.68 (%)
+Epoch: [010/030]
+TRAINING:	avg. loss 0.8626
+VALIDATION:	avg. loss 1.3726
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 62.47 (%) Prec 57.51 (%) Rec 62.47 (%) F1 57.04 (%)
+Epoch: [011/030]
+TRAINING:	avg. loss 0.8521
+VALIDATION:	avg. loss 1.3607
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 62.93 (%) Prec 56.80 (%) Rec 62.93 (%) F1 57.41 (%)
+New best F1 57.41% at epoch 11, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_1/best_loso_sbj_1.pth.tar
+Epoch: [012/030]
+TRAINING:	avg. loss 0.8440
+VALIDATION:	avg. loss 1.3707
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 61.19 (%) Prec 55.20 (%) Rec 61.19 (%) F1 56.01 (%)
+Epoch: [013/030]
+TRAINING:	avg. loss 0.8358
+VALIDATION:	avg. loss 1.3738
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 62.72 (%) Prec 57.02 (%) Rec 62.72 (%) F1 57.05 (%)
+Epoch: [014/030]
+TRAINING:	avg. loss 0.8308
+VALIDATION:	avg. loss 1.3663
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 62.88 (%) Prec 56.83 (%) Rec 62.88 (%) F1 57.30 (%)
+Epoch: [015/030]
+TRAINING:	avg. loss 0.8239
+VALIDATION:	avg. loss 1.4008
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 62.45 (%) Prec 56.13 (%) Rec 62.45 (%) F1 55.93 (%)
+Epoch: [016/030]
+TRAINING:	avg. loss 0.8182
+VALIDATION:	avg. loss 1.3763
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 62.39 (%) Prec 55.79 (%) Rec 62.39 (%) F1 56.17 (%)
+Epoch: [017/030]
+TRAINING:	avg. loss 0.8132
+VALIDATION:	avg. loss 1.3963
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 62.23 (%) Prec 55.96 (%) Rec 62.23 (%) F1 55.75 (%)
+Epoch: [018/030]
+TRAINING:	avg. loss 0.8085
+VALIDATION:	avg. loss 1.3740
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 62.06 (%) Prec 55.91 (%) Rec 62.06 (%) F1 56.59 (%)
+Epoch: [019/030]
+TRAINING:	avg. loss 0.8033
+VALIDATION:	avg. loss 1.3948
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 61.77 (%) Prec 55.45 (%) Rec 61.77 (%) F1 56.16 (%)
+Epoch: [020/030]
+TRAINING:	avg. loss 0.7990
+VALIDATION:	avg. loss 1.3771
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 64.36 (%) Prec 58.16 (%) Rec 64.36 (%) F1 58.55 (%)
+New best F1 58.55% at epoch 20, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_1/best_loso_sbj_1.pth.tar
+Epoch: [021/030]
+TRAINING:	avg. loss 0.7927
+VALIDATION:	avg. loss 1.3840
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 62.46 (%) Prec 55.69 (%) Rec 62.46 (%) F1 56.15 (%)
+Epoch: [022/030]
+TRAINING:	avg. loss 0.7884
+VALIDATION:	avg. loss 1.3924
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 62.45 (%) Prec 55.42 (%) Rec 62.45 (%) F1 56.06 (%)
+Epoch: [023/030]
+TRAINING:	avg. loss 0.7853
+VALIDATION:	avg. loss 1.3722
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 62.47 (%) Prec 56.82 (%) Rec 62.47 (%) F1 57.18 (%)
+Epoch: [024/030]
+TRAINING:	avg. loss 0.7817
+VALIDATION:	avg. loss 1.4083
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 62.76 (%) Prec 56.19 (%) Rec 62.76 (%) F1 56.38 (%)
+Epoch: [025/030]
+TRAINING:	avg. loss 0.7789
+VALIDATION:	avg. loss 1.4018
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 62.67 (%) Prec 55.52 (%) Rec 62.67 (%) F1 56.27 (%)
+Epoch: [026/030]
+TRAINING:	avg. loss 0.7763
+VALIDATION:	avg. loss 1.3829
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 62.17 (%) Prec 57.00 (%) Rec 62.17 (%) F1 57.56 (%)
+Epoch: [027/030]
+TRAINING:	avg. loss 0.7721
+VALIDATION:	avg. loss 1.4010
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 62.75 (%) Prec 56.13 (%) Rec 62.75 (%) F1 56.40 (%)
+Epoch: [028/030]
+TRAINING:	avg. loss 0.7695
+VALIDATION:	avg. loss 1.3964
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 62.17 (%) Prec 56.12 (%) Rec 62.17 (%) F1 56.91 (%)
+Epoch: [029/030]
+TRAINING:	avg. loss 0.7670
+VALIDATION:	avg. loss 1.3932
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 62.23 (%) Prec 57.21 (%) Rec 62.23 (%) F1 56.75 (%)
+Epoch: [030/030]
+TRAINING:	avg. loss 0.7645
+VALIDATION:	avg. loss 1.4111
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 62.61 (%) Prec 56.11 (%) Rec 62.61 (%) F1 56.43 (%)
+
+FINAL RESULTS SUBJECT 1
+TRAINING:	avg. loss 0.86
+VALIDATION:	avg. loss 1.39
+
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) 
+		Acc 62.61 (%) Prec 56.11 (%) Rec 62.61 (%) F1 56.43 (%)
+
+Split 3 / 22
+Training data shape: (3288200, 14)
+Validation data shape: (178200, 14)
+Min/ Max values in training data: [-1.00, 1.00]
+Min/ Max values in validation data: [-1.00, 1.00]
+Number of learnable parameters for DeepConvLSTM: 487189
+DeepConvLSTM(
+  (conv1): Conv2d(1, 64, kernel_size=(2, 1), stride=(1, 1))
+  (conv2): Conv2d(64, 64, kernel_size=(2, 1), stride=(1, 1))
+  (conv3): Conv2d(64, 64, kernel_size=(2, 1), stride=(1, 1))
+  (conv4): Conv2d(64, 64, kernel_size=(2, 1), stride=(1, 1))
+  (lstm): LSTM(768, 128)
+  (dropout): Dropout(p=0.5, inplace=False)
+  (classifier): Linear(in_features=128, out_features=19, bias=True)
+  (activation): ReLU()
+  (gamma_function): gammaFunction()
+  (quantizer): UniformQuantizerSTE()
+)
+Class weights: [0.1333281  1.71214938 1.55802125 1.48475592 1.68081984 1.57921969
+ 1.54338979 1.58017139 1.53016623 1.49817517 1.66351578 1.55642384
+ 1.51334637 1.51183921 1.56554772 1.55592008 1.50851822 1.60407477
+ 1.57057739]
+Epoch: [001/030]
+TRAINING:	avg. loss 1.3824
+VALIDATION:	avg. loss 2.4680
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 39.57 (%) Prec 35.63 (%) Rec 44.84 (%) F1 31.36 (%)
+New best F1 31.36% at epoch 1, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_2/best_loso_sbj_2.pth.tar
+Epoch: [002/030]
+TRAINING:	avg. loss 1.0938
+VALIDATION:	avg. loss 2.4542
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 40.84 (%) Prec 38.91 (%) Rec 46.11 (%) F1 33.49 (%)
+New best F1 33.49% at epoch 2, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_2/best_loso_sbj_2.pth.tar
+Epoch: [003/030]
+TRAINING:	avg. loss 1.0157
+VALIDATION:	avg. loss 2.4348
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 40.83 (%) Prec 38.66 (%) Rec 46.09 (%) F1 33.81 (%)
+New best F1 33.81% at epoch 3, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_2/best_loso_sbj_2.pth.tar
+Epoch: [004/030]
+TRAINING:	avg. loss 0.9746
+VALIDATION:	avg. loss 2.4784
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 41.98 (%) Prec 38.36 (%) Rec 47.24 (%) F1 34.34 (%)
+New best F1 34.34% at epoch 4, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_2/best_loso_sbj_2.pth.tar
+Epoch: [005/030]
+TRAINING:	avg. loss 0.9458
+VALIDATION:	avg. loss 2.5461
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 40.88 (%) Prec 37.69 (%) Rec 46.14 (%) F1 34.16 (%)
+Epoch: [006/030]
+TRAINING:	avg. loss 0.9235
+VALIDATION:	avg. loss 2.5703
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 41.77 (%) Prec 36.91 (%) Rec 47.04 (%) F1 33.68 (%)
+Epoch: [007/030]
+TRAINING:	avg. loss 0.9061
+VALIDATION:	avg. loss 2.5686
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 38.99 (%) Prec 36.03 (%) Rec 44.26 (%) F1 31.56 (%)
+Epoch: [008/030]
+TRAINING:	avg. loss 0.8907
+VALIDATION:	avg. loss 2.5944
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 38.69 (%) Prec 35.92 (%) Rec 43.95 (%) F1 31.85 (%)
+Epoch: [009/030]
+TRAINING:	avg. loss 0.8791
+VALIDATION:	avg. loss 2.5595
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 40.11 (%) Prec 36.81 (%) Rec 45.37 (%) F1 32.65 (%)
+Epoch: [010/030]
+TRAINING:	avg. loss 0.8672
+VALIDATION:	avg. loss 2.6394
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 41.98 (%) Prec 40.48 (%) Rec 47.24 (%) F1 34.86 (%)
+New best F1 34.86% at epoch 10, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_2/best_loso_sbj_2.pth.tar
+Epoch: [011/030]
+TRAINING:	avg. loss 0.8546
+VALIDATION:	avg. loss 2.6050
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 42.48 (%) Prec 38.33 (%) Rec 47.75 (%) F1 34.43 (%)
+Epoch: [012/030]
+TRAINING:	avg. loss 0.8475
+VALIDATION:	avg. loss 2.6381
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 38.47 (%) Prec 36.14 (%) Rec 43.74 (%) F1 31.99 (%)
+Epoch: [013/030]
+TRAINING:	avg. loss 0.8391
+VALIDATION:	avg. loss 2.6169
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 41.95 (%) Prec 39.08 (%) Rec 47.21 (%) F1 35.21 (%)
+New best F1 35.21% at epoch 13, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_2/best_loso_sbj_2.pth.tar
+Epoch: [014/030]
+TRAINING:	avg. loss 0.8330
+VALIDATION:	avg. loss 2.6933
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 42.46 (%) Prec 37.16 (%) Rec 47.72 (%) F1 33.91 (%)
+Epoch: [015/030]
+TRAINING:	avg. loss 0.8271
+VALIDATION:	avg. loss 2.6745
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 39.59 (%) Prec 36.63 (%) Rec 44.85 (%) F1 32.59 (%)
+Epoch: [016/030]
+TRAINING:	avg. loss 0.8213
+VALIDATION:	avg. loss 2.6379
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 42.18 (%) Prec 37.45 (%) Rec 47.44 (%) F1 33.58 (%)
+Epoch: [017/030]
+TRAINING:	avg. loss 0.8165
+VALIDATION:	avg. loss 2.6408
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 39.87 (%) Prec 35.78 (%) Rec 45.13 (%) F1 32.42 (%)
+Epoch: [018/030]
+TRAINING:	avg. loss 0.8108
+VALIDATION:	avg. loss 2.6937
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 40.10 (%) Prec 35.48 (%) Rec 45.37 (%) F1 31.85 (%)
+Epoch: [019/030]
+TRAINING:	avg. loss 0.8065
+VALIDATION:	avg. loss 2.6489
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 42.11 (%) Prec 37.82 (%) Rec 47.37 (%) F1 34.32 (%)
+Epoch: [020/030]
+TRAINING:	avg. loss 0.8017
+VALIDATION:	avg. loss 2.7201
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 42.83 (%) Prec 37.17 (%) Rec 48.10 (%) F1 34.32 (%)
+Epoch: [021/030]
+TRAINING:	avg. loss 0.7964
+VALIDATION:	avg. loss 2.7083
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 42.22 (%) Prec 37.97 (%) Rec 47.49 (%) F1 34.74 (%)
+Epoch: [022/030]
+TRAINING:	avg. loss 0.7925
+VALIDATION:	avg. loss 2.7514
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 39.75 (%) Prec 36.83 (%) Rec 45.01 (%) F1 32.66 (%)
+Epoch: [023/030]
+TRAINING:	avg. loss 0.7887
+VALIDATION:	avg. loss 2.7266
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 42.23 (%) Prec 37.85 (%) Rec 47.50 (%) F1 34.67 (%)
+Epoch: [024/030]
+TRAINING:	avg. loss 0.7851
+VALIDATION:	avg. loss 2.7105
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 42.03 (%) Prec 37.60 (%) Rec 47.30 (%) F1 34.77 (%)
+Epoch: [025/030]
+TRAINING:	avg. loss 0.7827
+VALIDATION:	avg. loss 2.7587
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 42.38 (%) Prec 38.83 (%) Rec 47.64 (%) F1 34.75 (%)
+Epoch: [026/030]
+TRAINING:	avg. loss 0.7795
+VALIDATION:	avg. loss 2.7236
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 39.80 (%) Prec 37.22 (%) Rec 45.06 (%) F1 33.28 (%)
+Epoch: [027/030]
+TRAINING:	avg. loss 0.7751
+VALIDATION:	avg. loss 2.7729
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 39.56 (%) Prec 35.16 (%) Rec 44.83 (%) F1 32.05 (%)
+Epoch: [028/030]
+TRAINING:	avg. loss 0.7725
+VALIDATION:	avg. loss 2.7275
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 39.67 (%) Prec 35.32 (%) Rec 44.93 (%) F1 32.22 (%)
+Epoch: [029/030]
+TRAINING:	avg. loss 0.7694
+VALIDATION:	avg. loss 2.7467
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 38.35 (%) Prec 34.47 (%) Rec 43.61 (%) F1 31.33 (%)
+Epoch: [030/030]
+TRAINING:	avg. loss 0.7668
+VALIDATION:	avg. loss 2.7367
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 39.67 (%) Prec 35.23 (%) Rec 44.93 (%) F1 32.13 (%)
+
+FINAL RESULTS SUBJECT 2
+TRAINING:	avg. loss 0.86
+VALIDATION:	avg. loss 2.64
+
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) 
+		Acc 41.87 (%) Prec 35.23 (%) Rec 39.67 (%) F1 32.13 (%)
+
+Split 4 / 22
+Training data shape: (3257850, 14)
+Validation data shape: (208550, 14)
+Min/ Max values in training data: [-1.00, 1.00]
+Min/ Max values in validation data: [-0.80, 0.85]
+Number of learnable parameters for DeepConvLSTM: 487189
+DeepConvLSTM(
+  (conv1): Conv2d(1, 64, kernel_size=(2, 1), stride=(1, 1))
+  (conv2): Conv2d(64, 64, kernel_size=(2, 1), stride=(1, 1))
+  (conv3): Conv2d(64, 64, kernel_size=(2, 1), stride=(1, 1))
+  (conv4): Conv2d(64, 64, kernel_size=(2, 1), stride=(1, 1))
+  (lstm): LSTM(768, 128)
+  (dropout): Dropout(p=0.5, inplace=False)
+  (classifier): Linear(in_features=128, out_features=19, bias=True)
+  (activation): ReLU()
+  (gamma_function): gammaFunction()
+  (quantizer): UniformQuantizerSTE()
+)
+Class weights: [0.13582759 1.69277799 1.53033077 1.42519733 1.6636083  1.63570771
+ 1.47048301 1.63379061 1.50764365 1.4638168  1.65230596 1.54272311
+ 1.54912081 1.48388366 1.54493332 1.53509879 1.4594434  1.58376322
+ 1.53209477]
+Epoch: [001/030]
+TRAINING:	avg. loss 1.3722
+VALIDATION:	avg. loss 1.7297
+		Avg. mAP 0.01 (%) mAP@0.3 0.03 (%) mAP@0.4 0.01 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 55.46 (%) Prec 41.64 (%) Rec 55.46 (%) F1 42.95 (%)
+New best F1 42.95% at epoch 1, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_3/best_loso_sbj_3.pth.tar
+Epoch: [002/030]
+TRAINING:	avg. loss 1.0893
+VALIDATION:	avg. loss 1.7501
+		Avg. mAP 0.00 (%) mAP@0.3 0.01 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 57.42 (%) Prec 41.75 (%) Rec 57.42 (%) F1 43.15 (%)
+New best F1 43.15% at epoch 2, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_3/best_loso_sbj_3.pth.tar
+Epoch: [003/030]
+TRAINING:	avg. loss 1.0181
+VALIDATION:	avg. loss 1.6256
+		Avg. mAP 0.00 (%) mAP@0.3 0.01 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 58.33 (%) Prec 43.03 (%) Rec 58.33 (%) F1 44.72 (%)
+New best F1 44.72% at epoch 3, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_3/best_loso_sbj_3.pth.tar
+Epoch: [004/030]
+TRAINING:	avg. loss 0.9752
+VALIDATION:	avg. loss 1.6569
+		Avg. mAP 0.00 (%) mAP@0.3 0.01 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 58.03 (%) Prec 43.77 (%) Rec 58.03 (%) F1 44.75 (%)
+New best F1 44.75% at epoch 4, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_3/best_loso_sbj_3.pth.tar
+Epoch: [005/030]
+TRAINING:	avg. loss 0.9464
+VALIDATION:	avg. loss 1.6618
+		Avg. mAP 0.00 (%) mAP@0.3 0.01 (%) mAP@0.4 0.01 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 58.14 (%) Prec 44.03 (%) Rec 58.14 (%) F1 45.10 (%)
+New best F1 45.10% at epoch 5, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_3/best_loso_sbj_3.pth.tar
+Epoch: [006/030]
+TRAINING:	avg. loss 0.9230
+VALIDATION:	avg. loss 1.6690
+		Avg. mAP 0.00 (%) mAP@0.3 0.01 (%) mAP@0.4 0.01 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 59.53 (%) Prec 43.81 (%) Rec 59.53 (%) F1 45.51 (%)
+New best F1 45.51% at epoch 6, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_3/best_loso_sbj_3.pth.tar
+Epoch: [007/030]
+TRAINING:	avg. loss 0.9045
+VALIDATION:	avg. loss 1.6794
+		Avg. mAP 0.00 (%) mAP@0.3 0.01 (%) mAP@0.4 0.01 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 59.21 (%) Prec 44.06 (%) Rec 59.21 (%) F1 45.70 (%)
+New best F1 45.70% at epoch 7, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_3/best_loso_sbj_3.pth.tar
+Epoch: [008/030]
+TRAINING:	avg. loss 0.8891
+VALIDATION:	avg. loss 1.6935
+		Avg. mAP 0.00 (%) mAP@0.3 0.01 (%) mAP@0.4 0.01 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 58.70 (%) Prec 43.62 (%) Rec 58.70 (%) F1 45.08 (%)
+Epoch: [009/030]
+TRAINING:	avg. loss 0.8760
+VALIDATION:	avg. loss 1.6268
+		Avg. mAP 0.01 (%) mAP@0.3 0.01 (%) mAP@0.4 0.01 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 59.11 (%) Prec 45.62 (%) Rec 59.11 (%) F1 46.81 (%)
+New best F1 46.81% at epoch 9, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_3/best_loso_sbj_3.pth.tar
+Epoch: [010/030]
+TRAINING:	avg. loss 0.8650
+VALIDATION:	avg. loss 1.6272
+		Avg. mAP 0.00 (%) mAP@0.3 0.01 (%) mAP@0.4 0.01 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 59.02 (%) Prec 44.50 (%) Rec 59.02 (%) F1 46.22 (%)
+Epoch: [011/030]
+TRAINING:	avg. loss 0.8541
+VALIDATION:	avg. loss 1.6468
+		Avg. mAP 0.01 (%) mAP@0.3 0.02 (%) mAP@0.4 0.01 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 59.38 (%) Prec 44.73 (%) Rec 59.38 (%) F1 46.29 (%)
+Epoch: [012/030]
+TRAINING:	avg. loss 0.8452
+VALIDATION:	avg. loss 1.6325
+		Avg. mAP 0.01 (%) mAP@0.3 0.01 (%) mAP@0.4 0.01 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 60.34 (%) Prec 46.12 (%) Rec 60.34 (%) F1 47.69 (%)
+New best F1 47.69% at epoch 12, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_3/best_loso_sbj_3.pth.tar
+Epoch: [013/030]
+TRAINING:	avg. loss 0.8387
+VALIDATION:	avg. loss 1.6218
+		Avg. mAP 0.01 (%) mAP@0.3 0.01 (%) mAP@0.4 0.01 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 60.32 (%) Prec 43.87 (%) Rec 60.32 (%) F1 46.23 (%)
+Epoch: [014/030]
+TRAINING:	avg. loss 0.8319
+VALIDATION:	avg. loss 1.5935
+		Avg. mAP 0.00 (%) mAP@0.3 0.01 (%) mAP@0.4 0.01 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 59.88 (%) Prec 45.04 (%) Rec 59.88 (%) F1 47.23 (%)
+Epoch: [015/030]
+TRAINING:	avg. loss 0.8254
+VALIDATION:	avg. loss 1.6405
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 59.83 (%) Prec 44.32 (%) Rec 59.83 (%) F1 46.45 (%)
+Epoch: [016/030]
+TRAINING:	avg. loss 0.8198
+VALIDATION:	avg. loss 1.6366
+		Avg. mAP 0.01 (%) mAP@0.3 0.02 (%) mAP@0.4 0.02 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 59.66 (%) Prec 45.12 (%) Rec 59.66 (%) F1 46.77 (%)
+Epoch: [017/030]
+TRAINING:	avg. loss 0.8148
+VALIDATION:	avg. loss 1.5860
+		Avg. mAP 0.01 (%) mAP@0.3 0.02 (%) mAP@0.4 0.02 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 60.11 (%) Prec 45.72 (%) Rec 60.11 (%) F1 47.54 (%)
+Epoch: [018/030]
+TRAINING:	avg. loss 0.8092
+VALIDATION:	avg. loss 1.6351
+		Avg. mAP 0.01 (%) mAP@0.3 0.02 (%) mAP@0.4 0.01 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 60.04 (%) Prec 44.93 (%) Rec 60.04 (%) F1 46.80 (%)
+Epoch: [019/030]
+TRAINING:	avg. loss 0.8047
+VALIDATION:	avg. loss 1.6220
+		Avg. mAP 0.01 (%) mAP@0.3 0.02 (%) mAP@0.4 0.01 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 59.53 (%) Prec 44.55 (%) Rec 59.53 (%) F1 46.41 (%)
+Epoch: [020/030]
+TRAINING:	avg. loss 0.8005
+VALIDATION:	avg. loss 1.6187
+		Avg. mAP 0.01 (%) mAP@0.3 0.02 (%) mAP@0.4 0.02 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 60.82 (%) Prec 46.27 (%) Rec 60.82 (%) F1 47.93 (%)
+New best F1 47.93% at epoch 20, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_3/best_loso_sbj_3.pth.tar
+Epoch: [021/030]
+TRAINING:	avg. loss 0.7938
+VALIDATION:	avg. loss 1.6296
+		Avg. mAP 0.01 (%) mAP@0.3 0.01 (%) mAP@0.4 0.01 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 60.30 (%) Prec 44.17 (%) Rec 60.30 (%) F1 46.42 (%)
+Epoch: [022/030]
+TRAINING:	avg. loss 0.7906
+VALIDATION:	avg. loss 1.5991
+		Avg. mAP 0.01 (%) mAP@0.3 0.01 (%) mAP@0.4 0.01 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 60.35 (%) Prec 45.62 (%) Rec 60.35 (%) F1 47.80 (%)
+Epoch: [023/030]
+TRAINING:	avg. loss 0.7874
+VALIDATION:	avg. loss 1.6236
+		Avg. mAP 0.01 (%) mAP@0.3 0.01 (%) mAP@0.4 0.01 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 60.97 (%) Prec 44.37 (%) Rec 60.97 (%) F1 46.80 (%)
+Epoch: [024/030]
+TRAINING:	avg. loss 0.7837
+VALIDATION:	avg. loss 1.6268
+		Avg. mAP 0.01 (%) mAP@0.3 0.01 (%) mAP@0.4 0.01 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 60.15 (%) Prec 44.59 (%) Rec 60.15 (%) F1 46.63 (%)
+Epoch: [025/030]
+TRAINING:	avg. loss 0.7799
+VALIDATION:	avg. loss 1.6195
+		Avg. mAP 0.01 (%) mAP@0.3 0.01 (%) mAP@0.4 0.01 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 59.96 (%) Prec 45.41 (%) Rec 59.96 (%) F1 47.37 (%)
+Epoch: [026/030]
+TRAINING:	avg. loss 0.7778
+VALIDATION:	avg. loss 1.6146
+		Avg. mAP 0.01 (%) mAP@0.3 0.01 (%) mAP@0.4 0.01 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 59.91 (%) Prec 44.79 (%) Rec 59.91 (%) F1 46.60 (%)
+Epoch: [027/030]
+TRAINING:	avg. loss 0.7745
+VALIDATION:	avg. loss 1.6494
+		Avg. mAP 0.01 (%) mAP@0.3 0.01 (%) mAP@0.4 0.01 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 58.21 (%) Prec 42.99 (%) Rec 58.21 (%) F1 44.87 (%)
+Epoch: [028/030]
+TRAINING:	avg. loss 0.7713
+VALIDATION:	avg. loss 1.6252
+		Avg. mAP 0.01 (%) mAP@0.3 0.02 (%) mAP@0.4 0.01 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 59.76 (%) Prec 44.40 (%) Rec 59.76 (%) F1 46.40 (%)
+Epoch: [029/030]
+TRAINING:	avg. loss 0.7688
+VALIDATION:	avg. loss 1.6869
+		Avg. mAP 0.01 (%) mAP@0.3 0.03 (%) mAP@0.4 0.01 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 59.72 (%) Prec 44.64 (%) Rec 59.72 (%) F1 46.28 (%)
+Epoch: [030/030]
+TRAINING:	avg. loss 0.7656
+VALIDATION:	avg. loss 1.6628
+		Avg. mAP 0.01 (%) mAP@0.3 0.01 (%) mAP@0.4 0.01 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 59.05 (%) Prec 43.86 (%) Rec 59.05 (%) F1 45.87 (%)
+
+FINAL RESULTS SUBJECT 3
+TRAINING:	avg. loss 0.86
+VALIDATION:	avg. loss 1.64
+
+		Avg. mAP 0.01 (%) mAP@0.3 0.02 (%) mAP@0.4 0.02 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) 
+		Acc 59.05 (%) Prec 43.86 (%) Rec 59.05 (%) F1 45.87 (%)
+
+Split 5 / 22
+Training data shape: (3306825, 14)
+Validation data shape: (159575, 14)
+Min/ Max values in training data: [-1.00, 1.00]
+Min/ Max values in validation data: [-1.00, 1.00]
+Number of learnable parameters for DeepConvLSTM: 487189
+DeepConvLSTM(
+  (conv1): Conv2d(1, 64, kernel_size=(2, 1), stride=(1, 1))
+  (conv2): Conv2d(64, 64, kernel_size=(2, 1), stride=(1, 1))
+  (conv3): Conv2d(64, 64, kernel_size=(2, 1), stride=(1, 1))
+  (conv4): Conv2d(64, 64, kernel_size=(2, 1), stride=(1, 1))
+  (lstm): LSTM(768, 128)
+  (dropout): Dropout(p=0.5, inplace=False)
+  (classifier): Linear(in_features=128, out_features=19, bias=True)
+  (activation): ReLU()
+  (gamma_function): gammaFunction()
+  (quantizer): UniformQuantizerSTE()
+)
+Class weights: [0.13356435 1.74421148 1.56904968 1.43723302 1.68748833 1.6530596
+ 1.45216335 1.57994645 1.54059044 1.50968001 1.67569248 1.57938727
+ 1.50007689 1.504707   1.58413134 1.58447747 1.47667041 1.6003441
+ 1.53760963]
+Epoch: [001/030]
+TRAINING:	avg. loss 1.3518
+VALIDATION:	avg. loss 2.1359
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 52.63 (%) Prec 38.21 (%) Rec 52.63 (%) F1 41.36 (%)
+New best F1 41.36% at epoch 1, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_4/best_loso_sbj_4.pth.tar
+Epoch: [002/030]
+TRAINING:	avg. loss 1.0617
+VALIDATION:	avg. loss 2.0284
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 54.96 (%) Prec 41.57 (%) Rec 54.96 (%) F1 44.67 (%)
+New best F1 44.67% at epoch 2, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_4/best_loso_sbj_4.pth.tar
+Epoch: [003/030]
+TRAINING:	avg. loss 0.9893
+VALIDATION:	avg. loss 2.0707
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 54.64 (%) Prec 41.55 (%) Rec 54.64 (%) F1 44.30 (%)
+Epoch: [004/030]
+TRAINING:	avg. loss 0.9501
+VALIDATION:	avg. loss 2.0756
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 55.55 (%) Prec 41.48 (%) Rec 55.55 (%) F1 44.84 (%)
+New best F1 44.84% at epoch 4, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_4/best_loso_sbj_4.pth.tar
+Epoch: [005/030]
+TRAINING:	avg. loss 0.9221
+VALIDATION:	avg. loss 2.0440
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 56.73 (%) Prec 42.50 (%) Rec 56.73 (%) F1 46.36 (%)
+New best F1 46.36% at epoch 5, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_4/best_loso_sbj_4.pth.tar
+Epoch: [006/030]
+TRAINING:	avg. loss 0.9014
+VALIDATION:	avg. loss 2.0944
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 55.72 (%) Prec 41.74 (%) Rec 55.72 (%) F1 45.11 (%)
+Epoch: [007/030]
+TRAINING:	avg. loss 0.8829
+VALIDATION:	avg. loss 2.1180
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 55.16 (%) Prec 41.53 (%) Rec 55.16 (%) F1 45.01 (%)
+Epoch: [008/030]
+TRAINING:	avg. loss 0.8689
+VALIDATION:	avg. loss 2.0771
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 56.06 (%) Prec 43.35 (%) Rec 56.06 (%) F1 46.65 (%)
+New best F1 46.65% at epoch 8, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_4/best_loso_sbj_4.pth.tar
+Epoch: [009/030]
+TRAINING:	avg. loss 0.8555
+VALIDATION:	avg. loss 2.0590
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 55.73 (%) Prec 42.18 (%) Rec 55.73 (%) F1 45.62 (%)
+Epoch: [010/030]
+TRAINING:	avg. loss 0.8443
+VALIDATION:	avg. loss 2.0866
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 55.82 (%) Prec 43.00 (%) Rec 55.82 (%) F1 46.26 (%)
+Epoch: [011/030]
+TRAINING:	avg. loss 0.8341
+VALIDATION:	avg. loss 2.1243
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 55.73 (%) Prec 42.19 (%) Rec 55.73 (%) F1 45.37 (%)
+Epoch: [012/030]
+TRAINING:	avg. loss 0.8258
+VALIDATION:	avg. loss 2.0770
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 55.90 (%) Prec 43.47 (%) Rec 55.90 (%) F1 46.60 (%)
+Epoch: [013/030]
+TRAINING:	avg. loss 0.8173
+VALIDATION:	avg. loss 2.1037
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 55.58 (%) Prec 42.99 (%) Rec 55.58 (%) F1 46.02 (%)
+Epoch: [014/030]
+TRAINING:	avg. loss 0.8118
+VALIDATION:	avg. loss 2.0668
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 55.79 (%) Prec 42.38 (%) Rec 55.79 (%) F1 45.73 (%)
+Epoch: [015/030]
+TRAINING:	avg. loss 0.8052
+VALIDATION:	avg. loss 2.0494
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 55.56 (%) Prec 43.13 (%) Rec 55.56 (%) F1 46.50 (%)
+Epoch: [016/030]
+TRAINING:	avg. loss 0.7994
+VALIDATION:	avg. loss 2.0910
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 55.80 (%) Prec 42.83 (%) Rec 55.80 (%) F1 46.26 (%)
+Epoch: [017/030]
+TRAINING:	avg. loss 0.7939
+VALIDATION:	avg. loss 2.0787
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 55.53 (%) Prec 43.30 (%) Rec 55.53 (%) F1 46.51 (%)
+Epoch: [018/030]
+TRAINING:	avg. loss 0.7888
+VALIDATION:	avg. loss 2.0890
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 55.87 (%) Prec 43.34 (%) Rec 55.87 (%) F1 46.68 (%)
+New best F1 46.68% at epoch 18, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_4/best_loso_sbj_4.pth.tar
+Epoch: [019/030]
+TRAINING:	avg. loss 0.7844
+VALIDATION:	avg. loss 2.0854
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 55.44 (%) Prec 42.98 (%) Rec 55.44 (%) F1 46.21 (%)
+Epoch: [020/030]
+TRAINING:	avg. loss 0.7799
+VALIDATION:	avg. loss 2.0989
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 55.40 (%) Prec 43.85 (%) Rec 55.40 (%) F1 46.83 (%)
+New best F1 46.83% at epoch 20, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_4/best_loso_sbj_4.pth.tar
+Epoch: [021/030]
+TRAINING:	avg. loss 0.7737
+VALIDATION:	avg. loss 2.1217
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 55.42 (%) Prec 43.07 (%) Rec 55.42 (%) F1 46.16 (%)
+Epoch: [022/030]
+TRAINING:	avg. loss 0.7701
+VALIDATION:	avg. loss 2.1163
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 55.94 (%) Prec 43.55 (%) Rec 55.94 (%) F1 46.63 (%)
+Epoch: [023/030]
+TRAINING:	avg. loss 0.7662
+VALIDATION:	avg. loss 2.1194
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 56.01 (%) Prec 42.54 (%) Rec 56.01 (%) F1 46.06 (%)
+Epoch: [024/030]
+TRAINING:	avg. loss 0.7635
+VALIDATION:	avg. loss 2.0832
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 54.03 (%) Prec 43.17 (%) Rec 54.03 (%) F1 45.38 (%)
+Epoch: [025/030]
+TRAINING:	avg. loss 0.7594
+VALIDATION:	avg. loss 2.1151
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 55.41 (%) Prec 43.14 (%) Rec 55.41 (%) F1 46.47 (%)
+Epoch: [026/030]
+TRAINING:	avg. loss 0.7568
+VALIDATION:	avg. loss 2.1373
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 55.22 (%) Prec 42.98 (%) Rec 55.22 (%) F1 46.25 (%)
+Epoch: [027/030]
+TRAINING:	avg. loss 0.7533
+VALIDATION:	avg. loss 2.1312
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 55.21 (%) Prec 43.22 (%) Rec 55.21 (%) F1 46.21 (%)
+Epoch: [028/030]
+TRAINING:	avg. loss 0.7498
+VALIDATION:	avg. loss 2.0984
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 55.56 (%) Prec 42.78 (%) Rec 55.56 (%) F1 46.17 (%)
+Epoch: [029/030]
+TRAINING:	avg. loss 0.7481
+VALIDATION:	avg. loss 2.1184
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 55.27 (%) Prec 42.90 (%) Rec 55.27 (%) F1 45.78 (%)
+Epoch: [030/030]
+TRAINING:	avg. loss 0.7454
+VALIDATION:	avg. loss 2.1098
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 56.05 (%) Prec 43.86 (%) Rec 56.05 (%) F1 47.37 (%)
+New best F1 47.37% at epoch 30, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_4/best_loso_sbj_4.pth.tar
+
+FINAL RESULTS SUBJECT 4
+TRAINING:	avg. loss 0.84
+VALIDATION:	avg. loss 2.09
+
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) 
+		Acc 56.05 (%) Prec 43.86 (%) Rec 56.05 (%) F1 47.37 (%)
+
+Split 6 / 22
+Training data shape: (3358875, 14)
+Validation data shape: (107525, 14)
+Min/ Max values in training data: [-1.00, 1.00]
+Min/ Max values in validation data: [-0.72, 0.96]
+Number of learnable parameters for DeepConvLSTM: 487189
+DeepConvLSTM(
+  (conv1): Conv2d(1, 64, kernel_size=(2, 1), stride=(1, 1))
+  (conv2): Conv2d(64, 64, kernel_size=(2, 1), stride=(1, 1))
+  (conv3): Conv2d(64, 64, kernel_size=(2, 1), stride=(1, 1))
+  (conv4): Conv2d(64, 64, kernel_size=(2, 1), stride=(1, 1))
+  (lstm): LSTM(768, 128)
+  (dropout): Dropout(p=0.5, inplace=False)
+  (classifier): Linear(in_features=128, out_features=19, bias=True)
+  (activation): ReLU()
+  (gamma_function): gammaFunction()
+  (quantizer): UniformQuantizerSTE()
+)
+Class weights: [0.13120417 1.73152806 1.57428885 1.45783354 1.68176356 1.67970216
+ 1.48192117 1.60193648 1.54009648 1.51025531 1.68918793 1.57534104
+ 1.53380269 1.5344817  1.61183959 1.58351154 1.52337405 1.63066282
+ 1.59461022]
+Epoch: [001/030]
+TRAINING:	avg. loss 1.3556
+VALIDATION:	avg. loss 2.1344
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 40.84 (%) Prec 36.51 (%) Rec 40.84 (%) F1 36.02 (%)
+New best F1 36.02% at epoch 1, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_5/best_loso_sbj_5.pth.tar
+Epoch: [002/030]
+TRAINING:	avg. loss 1.0722
+VALIDATION:	avg. loss 2.1533
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 40.06 (%) Prec 36.01 (%) Rec 40.06 (%) F1 35.79 (%)
+Epoch: [003/030]
+TRAINING:	avg. loss 1.0002
+VALIDATION:	avg. loss 2.2148
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 40.23 (%) Prec 36.21 (%) Rec 40.23 (%) F1 36.01 (%)
+Epoch: [004/030]
+TRAINING:	avg. loss 0.9605
+VALIDATION:	avg. loss 2.1990
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 41.75 (%) Prec 38.41 (%) Rec 41.75 (%) F1 37.69 (%)
+New best F1 37.69% at epoch 4, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_5/best_loso_sbj_5.pth.tar
+Epoch: [005/030]
+TRAINING:	avg. loss 0.9325
+VALIDATION:	avg. loss 2.2011
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 40.40 (%) Prec 36.05 (%) Rec 40.40 (%) F1 36.66 (%)
+Epoch: [006/030]
+TRAINING:	avg. loss 0.9114
+VALIDATION:	avg. loss 2.2414
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 42.87 (%) Prec 38.44 (%) Rec 42.87 (%) F1 38.33 (%)
+New best F1 38.33% at epoch 6, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_5/best_loso_sbj_5.pth.tar
+Epoch: [007/030]
+TRAINING:	avg. loss 0.8955
+VALIDATION:	avg. loss 2.1946
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 40.44 (%) Prec 36.10 (%) Rec 40.44 (%) F1 36.63 (%)
+Epoch: [008/030]
+TRAINING:	avg. loss 0.8806
+VALIDATION:	avg. loss 2.2618
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 40.95 (%) Prec 36.46 (%) Rec 40.95 (%) F1 36.86 (%)
+Epoch: [009/030]
+TRAINING:	avg. loss 0.8683
+VALIDATION:	avg. loss 2.2448
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 40.93 (%) Prec 36.31 (%) Rec 40.93 (%) F1 36.92 (%)
+Epoch: [010/030]
+TRAINING:	avg. loss 0.8578
+VALIDATION:	avg. loss 2.2201
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 41.24 (%) Prec 38.12 (%) Rec 41.24 (%) F1 37.88 (%)
+Epoch: [011/030]
+TRAINING:	avg. loss 0.8470
+VALIDATION:	avg. loss 2.2426
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 41.48 (%) Prec 37.05 (%) Rec 41.48 (%) F1 37.37 (%)
+Epoch: [012/030]
+TRAINING:	avg. loss 0.8394
+VALIDATION:	avg. loss 2.2663
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 41.57 (%) Prec 37.43 (%) Rec 41.57 (%) F1 37.51 (%)
+Epoch: [013/030]
+TRAINING:	avg. loss 0.8314
+VALIDATION:	avg. loss 2.2588
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 41.45 (%) Prec 36.59 (%) Rec 41.45 (%) F1 37.11 (%)
+Epoch: [014/030]
+TRAINING:	avg. loss 0.8247
+VALIDATION:	avg. loss 2.2641
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 41.07 (%) Prec 36.82 (%) Rec 41.07 (%) F1 36.88 (%)
+Epoch: [015/030]
+TRAINING:	avg. loss 0.8186
+VALIDATION:	avg. loss 2.2682
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 41.13 (%) Prec 36.88 (%) Rec 41.13 (%) F1 37.09 (%)
+Epoch: [016/030]
+TRAINING:	avg. loss 0.8135
+VALIDATION:	avg. loss 2.2827
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 41.56 (%) Prec 37.20 (%) Rec 41.56 (%) F1 37.45 (%)
+Epoch: [017/030]
+TRAINING:	avg. loss 0.8083
+VALIDATION:	avg. loss 2.2689
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 41.42 (%) Prec 37.04 (%) Rec 41.42 (%) F1 37.27 (%)
+Epoch: [018/030]
+TRAINING:	avg. loss 0.8037
+VALIDATION:	avg. loss 2.3217
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 41.73 (%) Prec 37.32 (%) Rec 41.73 (%) F1 37.50 (%)
+Epoch: [019/030]
+TRAINING:	avg. loss 0.7979
+VALIDATION:	avg. loss 2.2641
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 42.95 (%) Prec 39.22 (%) Rec 42.95 (%) F1 39.02 (%)
+New best F1 39.02% at epoch 19, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_5/best_loso_sbj_5.pth.tar
+Epoch: [020/030]
+TRAINING:	avg. loss 0.7940
+VALIDATION:	avg. loss 2.2967
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 41.04 (%) Prec 37.15 (%) Rec 41.04 (%) F1 37.23 (%)
+Epoch: [021/030]
+TRAINING:	avg. loss 0.7885
+VALIDATION:	avg. loss 2.2952
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 41.79 (%) Prec 38.18 (%) Rec 41.79 (%) F1 38.12 (%)
+Epoch: [022/030]
+TRAINING:	avg. loss 0.7852
+VALIDATION:	avg. loss 2.2717
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 41.59 (%) Prec 37.62 (%) Rec 41.59 (%) F1 37.94 (%)
+Epoch: [023/030]
+TRAINING:	avg. loss 0.7811
+VALIDATION:	avg. loss 2.3491
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 41.87 (%) Prec 37.25 (%) Rec 41.87 (%) F1 37.67 (%)
+Epoch: [024/030]
+TRAINING:	avg. loss 0.7780
+VALIDATION:	avg. loss 2.3209
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 41.19 (%) Prec 37.22 (%) Rec 41.19 (%) F1 37.44 (%)
+Epoch: [025/030]
+TRAINING:	avg. loss 0.7740
+VALIDATION:	avg. loss 2.2933
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 41.61 (%) Prec 37.63 (%) Rec 41.61 (%) F1 38.11 (%)
+Epoch: [026/030]
+TRAINING:	avg. loss 0.7723
+VALIDATION:	avg. loss 2.3744
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 41.55 (%) Prec 37.35 (%) Rec 41.55 (%) F1 37.76 (%)
+Epoch: [027/030]
+TRAINING:	avg. loss 0.7686
+VALIDATION:	avg. loss 2.3479
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 41.28 (%) Prec 37.13 (%) Rec 41.28 (%) F1 37.44 (%)
+Epoch: [028/030]
+TRAINING:	avg. loss 0.7654
+VALIDATION:	avg. loss 2.3535
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 41.74 (%) Prec 37.55 (%) Rec 41.74 (%) F1 37.89 (%)
+Epoch: [029/030]
+TRAINING:	avg. loss 0.7627
+VALIDATION:	avg. loss 2.3141
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 41.70 (%) Prec 37.70 (%) Rec 41.70 (%) F1 38.02 (%)
+Epoch: [030/030]
+TRAINING:	avg. loss 0.7596
+VALIDATION:	avg. loss 2.3428
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 41.24 (%) Prec 37.27 (%) Rec 41.24 (%) F1 37.53 (%)
+
+FINAL RESULTS SUBJECT 5
+TRAINING:	avg. loss 0.85
+VALIDATION:	avg. loss 2.27
+
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) 
+		Acc 41.24 (%) Prec 37.27 (%) Rec 41.24 (%) F1 37.53 (%)
+
+Split 7 / 22
+Training data shape: (3341225, 14)
+Validation data shape: (125175, 14)
+Min/ Max values in training data: [-1.00, 1.00]
+Min/ Max values in validation data: [-0.73, 0.84]
+Number of learnable parameters for DeepConvLSTM: 487189
+DeepConvLSTM(
+  (conv1): Conv2d(1, 64, kernel_size=(2, 1), stride=(1, 1))
+  (conv2): Conv2d(64, 64, kernel_size=(2, 1), stride=(1, 1))
+  (conv3): Conv2d(64, 64, kernel_size=(2, 1), stride=(1, 1))
+  (conv4): Conv2d(64, 64, kernel_size=(2, 1), stride=(1, 1))
+  (lstm): LSTM(768, 128)
+  (dropout): Dropout(p=0.5, inplace=False)
+  (classifier): Linear(in_features=128, out_features=19, bias=True)
+  (activation): ReLU()
+  (gamma_function): gammaFunction()
+  (quantizer): UniformQuantizerSTE()
+)
+Class weights: [0.13085681 1.73749111 1.57480992 1.48447551 1.71577438 1.67939719
+ 1.4828982  1.60622585 1.55827308 1.50305144 1.69709604 1.58126737
+ 1.53779154 1.52352238 1.62007684 1.58627409 1.5040156  1.62497228
+ 1.57387966]
+Epoch: [001/030]
+TRAINING:	avg. loss 1.3970
+VALIDATION:	avg. loss 1.3479
+		Avg. mAP 0.00 (%) mAP@0.3 0.01 (%) mAP@0.4 0.01 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 65.57 (%) Prec 56.56 (%) Rec 65.57 (%) F1 57.22 (%)
+New best F1 57.22% at epoch 1, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_6/best_loso_sbj_6.pth.tar
+Epoch: [002/030]
+TRAINING:	avg. loss 1.1054
+VALIDATION:	avg. loss 1.3004
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 67.95 (%) Prec 59.38 (%) Rec 67.95 (%) F1 59.62 (%)
+New best F1 59.62% at epoch 2, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_6/best_loso_sbj_6.pth.tar
+Epoch: [003/030]
+TRAINING:	avg. loss 1.0299
+VALIDATION:	avg. loss 1.2644
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 69.74 (%) Prec 60.32 (%) Rec 69.74 (%) F1 61.59 (%)
+New best F1 61.59% at epoch 3, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_6/best_loso_sbj_6.pth.tar
+Epoch: [004/030]
+TRAINING:	avg. loss 0.9890
+VALIDATION:	avg. loss 1.2525
+		Avg. mAP 0.01 (%) mAP@0.3 0.01 (%) mAP@0.4 0.01 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 69.64 (%) Prec 61.32 (%) Rec 69.64 (%) F1 62.90 (%)
+New best F1 62.90% at epoch 4, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_6/best_loso_sbj_6.pth.tar
+Epoch: [005/030]
+TRAINING:	avg. loss 0.9577
+VALIDATION:	avg. loss 1.2488
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 69.38 (%) Prec 60.30 (%) Rec 69.38 (%) F1 61.58 (%)
+Epoch: [006/030]
+TRAINING:	avg. loss 0.9359
+VALIDATION:	avg. loss 1.2583
+		Avg. mAP 0.01 (%) mAP@0.3 0.02 (%) mAP@0.4 0.02 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 69.20 (%) Prec 61.22 (%) Rec 69.20 (%) F1 62.03 (%)
+Epoch: [007/030]
+TRAINING:	avg. loss 0.9176
+VALIDATION:	avg. loss 1.2182
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 70.43 (%) Prec 61.38 (%) Rec 70.43 (%) F1 63.14 (%)
+New best F1 63.14% at epoch 7, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_6/best_loso_sbj_6.pth.tar
+Epoch: [008/030]
+TRAINING:	avg. loss 0.9012
+VALIDATION:	avg. loss 1.2559
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 67.90 (%) Prec 59.10 (%) Rec 67.90 (%) F1 60.36 (%)
+Epoch: [009/030]
+TRAINING:	avg. loss 0.8881
+VALIDATION:	avg. loss 1.2389
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 68.95 (%) Prec 60.53 (%) Rec 68.95 (%) F1 61.66 (%)
+Epoch: [010/030]
+TRAINING:	avg. loss 0.8776
+VALIDATION:	avg. loss 1.2409
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 68.13 (%) Prec 59.77 (%) Rec 68.13 (%) F1 61.13 (%)
+Epoch: [011/030]
+TRAINING:	avg. loss 0.8651
+VALIDATION:	avg. loss 1.2532
+		Avg. mAP 0.01 (%) mAP@0.3 0.02 (%) mAP@0.4 0.02 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 68.18 (%) Prec 58.87 (%) Rec 68.18 (%) F1 60.45 (%)
+Epoch: [012/030]
+TRAINING:	avg. loss 0.8575
+VALIDATION:	avg. loss 1.2516
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 69.96 (%) Prec 60.13 (%) Rec 69.96 (%) F1 61.70 (%)
+Epoch: [013/030]
+TRAINING:	avg. loss 0.8495
+VALIDATION:	avg. loss 1.2432
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 67.24 (%) Prec 57.96 (%) Rec 67.24 (%) F1 59.78 (%)
+Epoch: [014/030]
+TRAINING:	avg. loss 0.8436
+VALIDATION:	avg. loss 1.2469
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 66.99 (%) Prec 59.01 (%) Rec 66.99 (%) F1 60.08 (%)
+Epoch: [015/030]
+TRAINING:	avg. loss 0.8362
+VALIDATION:	avg. loss 1.2424
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 68.33 (%) Prec 60.28 (%) Rec 68.33 (%) F1 61.68 (%)
+Epoch: [016/030]
+TRAINING:	avg. loss 0.8315
+VALIDATION:	avg. loss 1.2391
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 67.95 (%) Prec 59.69 (%) Rec 67.95 (%) F1 61.30 (%)
+Epoch: [017/030]
+TRAINING:	avg. loss 0.8258
+VALIDATION:	avg. loss 1.2469
+		Avg. mAP 0.01 (%) mAP@0.3 0.02 (%) mAP@0.4 0.02 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 67.66 (%) Prec 58.85 (%) Rec 67.66 (%) F1 60.40 (%)
+Epoch: [018/030]
+TRAINING:	avg. loss 0.8200
+VALIDATION:	avg. loss 1.2543
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 69.01 (%) Prec 60.65 (%) Rec 69.01 (%) F1 62.17 (%)
+Epoch: [019/030]
+TRAINING:	avg. loss 0.8160
+VALIDATION:	avg. loss 1.2406
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 67.91 (%) Prec 59.19 (%) Rec 67.91 (%) F1 60.78 (%)
+Epoch: [020/030]
+TRAINING:	avg. loss 0.8104
+VALIDATION:	avg. loss 1.2522
+		Avg. mAP 0.01 (%) mAP@0.3 0.02 (%) mAP@0.4 0.02 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 67.59 (%) Prec 58.60 (%) Rec 67.59 (%) F1 60.24 (%)
+Epoch: [021/030]
+TRAINING:	avg. loss 0.8044
+VALIDATION:	avg. loss 1.2375
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 68.15 (%) Prec 59.95 (%) Rec 68.15 (%) F1 61.70 (%)
+Epoch: [022/030]
+TRAINING:	avg. loss 0.8018
+VALIDATION:	avg. loss 1.2556
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 67.82 (%) Prec 58.97 (%) Rec 67.82 (%) F1 60.71 (%)
+Epoch: [023/030]
+TRAINING:	avg. loss 0.7979
+VALIDATION:	avg. loss 1.2709
+		Avg. mAP 0.01 (%) mAP@0.3 0.02 (%) mAP@0.4 0.02 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 67.94 (%) Prec 58.51 (%) Rec 67.94 (%) F1 60.34 (%)
+Epoch: [024/030]
+TRAINING:	avg. loss 0.7939
+VALIDATION:	avg. loss 1.2369
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 67.58 (%) Prec 59.30 (%) Rec 67.58 (%) F1 61.20 (%)
+Epoch: [025/030]
+TRAINING:	avg. loss 0.7919
+VALIDATION:	avg. loss 1.2463
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 67.32 (%) Prec 59.37 (%) Rec 67.32 (%) F1 60.74 (%)
+Epoch: [026/030]
+TRAINING:	avg. loss 0.7882
+VALIDATION:	avg. loss 1.2551
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 67.55 (%) Prec 59.97 (%) Rec 67.55 (%) F1 61.26 (%)
+Epoch: [027/030]
+TRAINING:	avg. loss 0.7847
+VALIDATION:	avg. loss 1.2547
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 67.59 (%) Prec 58.13 (%) Rec 67.59 (%) F1 60.06 (%)
+Epoch: [028/030]
+TRAINING:	avg. loss 0.7823
+VALIDATION:	avg. loss 1.2658
+		Avg. mAP 0.01 (%) mAP@0.3 0.01 (%) mAP@0.4 0.01 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 67.15 (%) Prec 57.69 (%) Rec 67.15 (%) F1 59.71 (%)
+Epoch: [029/030]
+TRAINING:	avg. loss 0.7797
+VALIDATION:	avg. loss 1.2648
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 67.23 (%) Prec 57.93 (%) Rec 67.23 (%) F1 59.93 (%)
+Epoch: [030/030]
+TRAINING:	avg. loss 0.7765
+VALIDATION:	avg. loss 1.2829
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 66.94 (%) Prec 58.67 (%) Rec 66.94 (%) F1 59.80 (%)
+
+FINAL RESULTS SUBJECT 6
+TRAINING:	avg. loss 0.88
+VALIDATION:	avg. loss 1.26
+
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) 
+		Acc 66.94 (%) Prec 58.67 (%) Rec 66.94 (%) F1 59.80 (%)
+
+Split 8 / 22
+Training data shape: (3323750, 14)
+Validation data shape: (142650, 14)
+Min/ Max values in training data: [-1.00, 1.00]
+Min/ Max values in validation data: [-0.96, 0.96]
+Number of learnable parameters for DeepConvLSTM: 487189
+DeepConvLSTM(
+  (conv1): Conv2d(1, 64, kernel_size=(2, 1), stride=(1, 1))
+  (conv2): Conv2d(64, 64, kernel_size=(2, 1), stride=(1, 1))
+  (conv3): Conv2d(64, 64, kernel_size=(2, 1), stride=(1, 1))
+  (conv4): Conv2d(64, 64, kernel_size=(2, 1), stride=(1, 1))
+  (lstm): LSTM(768, 128)
+  (dropout): Dropout(p=0.5, inplace=False)
+  (classifier): Linear(in_features=128, out_features=19, bias=True)
+  (activation): ReLU()
+  (gamma_function): gammaFunction()
+  (quantizer): UniformQuantizerSTE()
+)
+Class weights: [0.13245849 1.72100649 1.56889149 1.45420907 1.6991905  1.66980014
+ 1.47712276 1.59913943 1.54123176 1.4978402  1.68836637 1.5738885
+ 1.52192261 1.51622386 1.58539985 1.57104731 1.493199   1.62096689
+ 1.5624175 ]
+Epoch: [001/030]
+TRAINING:	avg. loss 1.3520
+VALIDATION:	avg. loss 1.8128
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 54.67 (%) Prec 45.92 (%) Rec 54.67 (%) F1 46.92 (%)
+New best F1 46.92% at epoch 1, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_7/best_loso_sbj_7.pth.tar
+Epoch: [002/030]
+TRAINING:	avg. loss 1.0706
+VALIDATION:	avg. loss 1.7999
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 54.49 (%) Prec 44.49 (%) Rec 54.49 (%) F1 46.18 (%)
+Epoch: [003/030]
+TRAINING:	avg. loss 0.9998
+VALIDATION:	avg. loss 1.7810
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 56.47 (%) Prec 47.39 (%) Rec 56.47 (%) F1 48.46 (%)
+New best F1 48.46% at epoch 3, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_7/best_loso_sbj_7.pth.tar
+Epoch: [004/030]
+TRAINING:	avg. loss 0.9589
+VALIDATION:	avg. loss 1.8166
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 56.50 (%) Prec 46.79 (%) Rec 56.50 (%) F1 48.02 (%)
+Epoch: [005/030]
+TRAINING:	avg. loss 0.9310
+VALIDATION:	avg. loss 1.7524
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 55.99 (%) Prec 46.60 (%) Rec 55.99 (%) F1 48.77 (%)
+New best F1 48.77% at epoch 5, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_7/best_loso_sbj_7.pth.tar
+Epoch: [006/030]
+TRAINING:	avg. loss 0.9090
+VALIDATION:	avg. loss 1.7644
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 56.02 (%) Prec 47.05 (%) Rec 56.02 (%) F1 48.30 (%)
+Epoch: [007/030]
+TRAINING:	avg. loss 0.8926
+VALIDATION:	avg. loss 1.6950
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 56.79 (%) Prec 48.19 (%) Rec 56.79 (%) F1 50.17 (%)
+New best F1 50.17% at epoch 7, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_7/best_loso_sbj_7.pth.tar
+Epoch: [008/030]
+TRAINING:	avg. loss 0.8782
+VALIDATION:	avg. loss 1.7725
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 56.59 (%) Prec 47.11 (%) Rec 56.59 (%) F1 49.06 (%)
+Epoch: [009/030]
+TRAINING:	avg. loss 0.8647
+VALIDATION:	avg. loss 1.7741
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 55.66 (%) Prec 46.41 (%) Rec 55.66 (%) F1 48.70 (%)
+Epoch: [010/030]
+TRAINING:	avg. loss 0.8547
+VALIDATION:	avg. loss 1.7745
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 56.17 (%) Prec 46.63 (%) Rec 56.17 (%) F1 48.84 (%)
+Epoch: [011/030]
+TRAINING:	avg. loss 0.8429
+VALIDATION:	avg. loss 1.7546
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 57.04 (%) Prec 47.62 (%) Rec 57.04 (%) F1 49.57 (%)
+Epoch: [012/030]
+TRAINING:	avg. loss 0.8352
+VALIDATION:	avg. loss 1.8110
+		Avg. mAP 0.00 (%) mAP@0.3 0.01 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 56.23 (%) Prec 47.72 (%) Rec 56.23 (%) F1 49.10 (%)
+Epoch: [013/030]
+TRAINING:	avg. loss 0.8275
+VALIDATION:	avg. loss 1.7753
+		Avg. mAP 0.00 (%) mAP@0.3 0.01 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 56.89 (%) Prec 47.34 (%) Rec 56.89 (%) F1 48.87 (%)
+Epoch: [014/030]
+TRAINING:	avg. loss 0.8213
+VALIDATION:	avg. loss 1.7923
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 56.14 (%) Prec 47.27 (%) Rec 56.14 (%) F1 48.67 (%)
+Epoch: [015/030]
+TRAINING:	avg. loss 0.8142
+VALIDATION:	avg. loss 1.7649
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 56.78 (%) Prec 47.86 (%) Rec 56.78 (%) F1 49.54 (%)
+Epoch: [016/030]
+TRAINING:	avg. loss 0.8086
+VALIDATION:	avg. loss 1.7736
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 56.29 (%) Prec 47.25 (%) Rec 56.29 (%) F1 48.54 (%)
+Epoch: [017/030]
+TRAINING:	avg. loss 0.8038
+VALIDATION:	avg. loss 1.7613
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 55.81 (%) Prec 47.40 (%) Rec 55.81 (%) F1 49.03 (%)
+Epoch: [018/030]
+TRAINING:	avg. loss 0.7980
+VALIDATION:	avg. loss 1.7850
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 56.05 (%) Prec 46.98 (%) Rec 56.05 (%) F1 48.79 (%)
+Epoch: [019/030]
+TRAINING:	avg. loss 0.7942
+VALIDATION:	avg. loss 1.7596
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 56.70 (%) Prec 47.64 (%) Rec 56.70 (%) F1 49.48 (%)
+Epoch: [020/030]
+TRAINING:	avg. loss 0.7886
+VALIDATION:	avg. loss 1.7909
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 56.65 (%) Prec 47.01 (%) Rec 56.65 (%) F1 49.03 (%)
+Epoch: [021/030]
+TRAINING:	avg. loss 0.7830
+VALIDATION:	avg. loss 1.7530
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 56.84 (%) Prec 47.93 (%) Rec 56.84 (%) F1 49.71 (%)
+Epoch: [022/030]
+TRAINING:	avg. loss 0.7791
+VALIDATION:	avg. loss 1.7303
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 56.94 (%) Prec 48.52 (%) Rec 56.94 (%) F1 50.59 (%)
+New best F1 50.59% at epoch 22, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_7/best_loso_sbj_7.pth.tar
+Epoch: [023/030]
+TRAINING:	avg. loss 0.7756
+VALIDATION:	avg. loss 1.7816
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 56.90 (%) Prec 48.46 (%) Rec 56.90 (%) F1 49.98 (%)
+Epoch: [024/030]
+TRAINING:	avg. loss 0.7718
+VALIDATION:	avg. loss 1.7863
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 56.28 (%) Prec 47.30 (%) Rec 56.28 (%) F1 49.04 (%)
+Epoch: [025/030]
+TRAINING:	avg. loss 0.7685
+VALIDATION:	avg. loss 1.7697
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 56.87 (%) Prec 47.58 (%) Rec 56.87 (%) F1 49.50 (%)
+Epoch: [026/030]
+TRAINING:	avg. loss 0.7660
+VALIDATION:	avg. loss 1.7147
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 56.51 (%) Prec 48.82 (%) Rec 56.51 (%) F1 50.16 (%)
+Epoch: [027/030]
+TRAINING:	avg. loss 0.7628
+VALIDATION:	avg. loss 1.7865
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 56.65 (%) Prec 47.51 (%) Rec 56.65 (%) F1 49.44 (%)
+Epoch: [028/030]
+TRAINING:	avg. loss 0.7595
+VALIDATION:	avg. loss 1.7863
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 56.14 (%) Prec 46.98 (%) Rec 56.14 (%) F1 48.93 (%)
+Epoch: [029/030]
+TRAINING:	avg. loss 0.7575
+VALIDATION:	avg. loss 1.7772
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 56.31 (%) Prec 46.87 (%) Rec 56.31 (%) F1 48.92 (%)
+Epoch: [030/030]
+TRAINING:	avg. loss 0.7542
+VALIDATION:	avg. loss 1.7926
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 56.08 (%) Prec 46.96 (%) Rec 56.08 (%) F1 48.75 (%)
+
+FINAL RESULTS SUBJECT 7
+TRAINING:	avg. loss 0.85
+VALIDATION:	avg. loss 1.77
+
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) 
+		Acc 56.08 (%) Prec 46.96 (%) Rec 56.08 (%) F1 48.75 (%)
+
+Split 9 / 22
+Training data shape: (3341650, 14)
+Validation data shape: (124750, 14)
+Min/ Max values in training data: [-1.00, 1.00]
+Min/ Max values in validation data: [-0.95, 0.77]
+Number of learnable parameters for DeepConvLSTM: 487189
+DeepConvLSTM(
+  (conv1): Conv2d(1, 64, kernel_size=(2, 1), stride=(1, 1))
+  (conv2): Conv2d(64, 64, kernel_size=(2, 1), stride=(1, 1))
+  (conv3): Conv2d(64, 64, kernel_size=(2, 1), stride=(1, 1))
+  (conv4): Conv2d(64, 64, kernel_size=(2, 1), stride=(1, 1))
+  (lstm): LSTM(768, 128)
+  (dropout): Dropout(p=0.5, inplace=False)
+  (classifier): Linear(in_features=128, out_features=19, bias=True)
+  (activation): ReLU()
+  (gamma_function): gammaFunction()
+  (quantizer): UniformQuantizerSTE()
+)
+Class weights: [0.13109551 1.74386236 1.56940143 1.46131119 1.70744513 1.68240554
+ 1.48199866 1.61483682 1.54764965 1.50753262 1.72360993 1.58386029
+ 1.53476506 1.52498364 1.59802156 1.58313316 1.50127842 1.62806657
+ 1.57020011]
+Epoch: [001/030]
+TRAINING:	avg. loss 1.3778
+VALIDATION:	avg. loss 1.2979
+		Avg. mAP 0.00 (%) mAP@0.3 0.01 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 67.25 (%) Prec 57.57 (%) Rec 67.25 (%) F1 57.96 (%)
+New best F1 57.96% at epoch 1, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_8/best_loso_sbj_8.pth.tar
+Epoch: [002/030]
+TRAINING:	avg. loss 1.1076
+VALIDATION:	avg. loss 1.2404
+		Avg. mAP 0.00 (%) mAP@0.3 0.02 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 70.30 (%) Prec 59.88 (%) Rec 70.30 (%) F1 61.45 (%)
+New best F1 61.45% at epoch 2, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_8/best_loso_sbj_8.pth.tar
+Epoch: [003/030]
+TRAINING:	avg. loss 1.0379
+VALIDATION:	avg. loss 1.2097
+		Avg. mAP 0.00 (%) mAP@0.3 0.02 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 71.26 (%) Prec 61.14 (%) Rec 71.26 (%) F1 62.21 (%)
+New best F1 62.21% at epoch 3, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_8/best_loso_sbj_8.pth.tar
+Epoch: [004/030]
+TRAINING:	avg. loss 0.9969
+VALIDATION:	avg. loss 1.2059
+		Avg. mAP 0.00 (%) mAP@0.3 0.02 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 70.86 (%) Prec 61.28 (%) Rec 70.86 (%) F1 62.17 (%)
+Epoch: [005/030]
+TRAINING:	avg. loss 0.9687
+VALIDATION:	avg. loss 1.1758
+		Avg. mAP 0.00 (%) mAP@0.3 0.02 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 72.14 (%) Prec 62.03 (%) Rec 72.14 (%) F1 63.54 (%)
+New best F1 63.54% at epoch 5, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_8/best_loso_sbj_8.pth.tar
+Epoch: [006/030]
+TRAINING:	avg. loss 0.9453
+VALIDATION:	avg. loss 1.1783
+		Avg. mAP 0.00 (%) mAP@0.3 0.02 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 72.43 (%) Prec 62.36 (%) Rec 72.43 (%) F1 63.71 (%)
+New best F1 63.71% at epoch 6, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_8/best_loso_sbj_8.pth.tar
+Epoch: [007/030]
+TRAINING:	avg. loss 0.9278
+VALIDATION:	avg. loss 1.1597
+		Avg. mAP 0.00 (%) mAP@0.3 0.02 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 72.24 (%) Prec 62.65 (%) Rec 72.24 (%) F1 64.82 (%)
+New best F1 64.82% at epoch 7, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_8/best_loso_sbj_8.pth.tar
+Epoch: [008/030]
+TRAINING:	avg. loss 0.9130
+VALIDATION:	avg. loss 1.1545
+		Avg. mAP 0.00 (%) mAP@0.3 0.02 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 72.24 (%) Prec 63.20 (%) Rec 72.24 (%) F1 64.15 (%)
+Epoch: [009/030]
+TRAINING:	avg. loss 0.8988
+VALIDATION:	avg. loss 1.1766
+		Avg. mAP 0.01 (%) mAP@0.3 0.03 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 72.30 (%) Prec 62.16 (%) Rec 72.30 (%) F1 63.79 (%)
+Epoch: [010/030]
+TRAINING:	avg. loss 0.8874
+VALIDATION:	avg. loss 1.1411
+		Avg. mAP 0.00 (%) mAP@0.3 0.02 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 72.90 (%) Prec 63.68 (%) Rec 72.90 (%) F1 64.72 (%)
+Epoch: [011/030]
+TRAINING:	avg. loss 0.8751
+VALIDATION:	avg. loss 1.1377
+		Avg. mAP 0.00 (%) mAP@0.3 0.02 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 73.14 (%) Prec 63.22 (%) Rec 73.14 (%) F1 64.79 (%)
+Epoch: [012/030]
+TRAINING:	avg. loss 0.8667
+VALIDATION:	avg. loss 1.1601
+		Avg. mAP 0.00 (%) mAP@0.3 0.02 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 72.86 (%) Prec 63.02 (%) Rec 72.86 (%) F1 65.24 (%)
+New best F1 65.24% at epoch 12, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_8/best_loso_sbj_8.pth.tar
+Epoch: [013/030]
+TRAINING:	avg. loss 0.8593
+VALIDATION:	avg. loss 1.1517
+		Avg. mAP 0.00 (%) mAP@0.3 0.02 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 72.25 (%) Prec 62.59 (%) Rec 72.25 (%) F1 64.02 (%)
+Epoch: [014/030]
+TRAINING:	avg. loss 0.8513
+VALIDATION:	avg. loss 1.1589
+		Avg. mAP 0.00 (%) mAP@0.3 0.02 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 72.98 (%) Prec 63.22 (%) Rec 72.98 (%) F1 64.47 (%)
+Epoch: [015/030]
+TRAINING:	avg. loss 0.8448
+VALIDATION:	avg. loss 1.1590
+		Avg. mAP 0.00 (%) mAP@0.3 0.02 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 72.94 (%) Prec 63.36 (%) Rec 72.94 (%) F1 64.58 (%)
+Epoch: [016/030]
+TRAINING:	avg. loss 0.8394
+VALIDATION:	avg. loss 1.1570
+		Avg. mAP 0.00 (%) mAP@0.3 0.02 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 72.24 (%) Prec 62.42 (%) Rec 72.24 (%) F1 63.86 (%)
+Epoch: [017/030]
+TRAINING:	avg. loss 0.8331
+VALIDATION:	avg. loss 1.1662
+		Avg. mAP 0.01 (%) mAP@0.3 0.03 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 72.56 (%) Prec 63.02 (%) Rec 72.56 (%) F1 64.29 (%)
+Epoch: [018/030]
+TRAINING:	avg. loss 0.8276
+VALIDATION:	avg. loss 1.1390
+		Avg. mAP 0.01 (%) mAP@0.3 0.03 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 73.09 (%) Prec 63.58 (%) Rec 73.09 (%) F1 64.86 (%)
+Epoch: [019/030]
+TRAINING:	avg. loss 0.8235
+VALIDATION:	avg. loss 1.1562
+		Avg. mAP 0.00 (%) mAP@0.3 0.02 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 72.70 (%) Prec 62.95 (%) Rec 72.70 (%) F1 64.35 (%)
+Epoch: [020/030]
+TRAINING:	avg. loss 0.8191
+VALIDATION:	avg. loss 1.1564
+		Avg. mAP 0.00 (%) mAP@0.3 0.02 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 73.26 (%) Prec 63.24 (%) Rec 73.26 (%) F1 64.80 (%)
+Epoch: [021/030]
+TRAINING:	avg. loss 0.8123
+VALIDATION:	avg. loss 1.1399
+		Avg. mAP 0.01 (%) mAP@0.3 0.03 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 73.24 (%) Prec 63.47 (%) Rec 73.24 (%) F1 65.06 (%)
+Epoch: [022/030]
+TRAINING:	avg. loss 0.8068
+VALIDATION:	avg. loss 1.1449
+		Avg. mAP 0.00 (%) mAP@0.3 0.02 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 72.82 (%) Prec 63.24 (%) Rec 72.82 (%) F1 64.57 (%)
+Epoch: [023/030]
+TRAINING:	avg. loss 0.8038
+VALIDATION:	avg. loss 1.1407
+		Avg. mAP 0.01 (%) mAP@0.3 0.03 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 73.19 (%) Prec 63.76 (%) Rec 73.19 (%) F1 65.98 (%)
+New best F1 65.98% at epoch 23, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_8/best_loso_sbj_8.pth.tar
+Epoch: [024/030]
+TRAINING:	avg. loss 0.8002
+VALIDATION:	avg. loss 1.1494
+		Avg. mAP 0.00 (%) mAP@0.3 0.02 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 72.88 (%) Prec 63.11 (%) Rec 72.88 (%) F1 64.67 (%)
+Epoch: [025/030]
+TRAINING:	avg. loss 0.7965
+VALIDATION:	avg. loss 1.1597
+		Avg. mAP 0.00 (%) mAP@0.3 0.02 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 72.15 (%) Prec 62.50 (%) Rec 72.15 (%) F1 64.00 (%)
+Epoch: [026/030]
+TRAINING:	avg. loss 0.7937
+VALIDATION:	avg. loss 1.1685
+		Avg. mAP 0.00 (%) mAP@0.3 0.02 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 72.69 (%) Prec 63.22 (%) Rec 72.69 (%) F1 64.55 (%)
+Epoch: [027/030]
+TRAINING:	avg. loss 0.7903
+VALIDATION:	avg. loss 1.1631
+		Avg. mAP 0.00 (%) mAP@0.3 0.02 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 72.35 (%) Prec 62.46 (%) Rec 72.35 (%) F1 63.99 (%)
+Epoch: [028/030]
+TRAINING:	avg. loss 0.7876
+VALIDATION:	avg. loss 1.1535
+		Avg. mAP 0.00 (%) mAP@0.3 0.02 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 72.25 (%) Prec 62.93 (%) Rec 72.25 (%) F1 64.88 (%)
+Epoch: [029/030]
+TRAINING:	avg. loss 0.7851
+VALIDATION:	avg. loss 1.1753
+		Avg. mAP 0.00 (%) mAP@0.3 0.02 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 71.98 (%) Prec 61.84 (%) Rec 71.98 (%) F1 63.58 (%)
+Epoch: [030/030]
+TRAINING:	avg. loss 0.7811
+VALIDATION:	avg. loss 1.1633
+		Avg. mAP 0.00 (%) mAP@0.3 0.02 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 72.85 (%) Prec 62.82 (%) Rec 72.85 (%) F1 64.50 (%)
+
+FINAL RESULTS SUBJECT 8
+TRAINING:	avg. loss 0.88
+VALIDATION:	avg. loss 1.17
+
+		Avg. mAP 0.01 (%) mAP@0.3 0.03 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) 
+		Acc 72.85 (%) Prec 62.82 (%) Rec 72.85 (%) F1 64.50 (%)
+
+Split 10 / 22
+Training data shape: (3358100, 14)
+Validation data shape: (108300, 14)
+Min/ Max values in training data: [-1.00, 1.00]
+Min/ Max values in validation data: [-0.98, 1.00]
+Number of learnable parameters for DeepConvLSTM: 487189
+DeepConvLSTM(
+  (conv1): Conv2d(1, 64, kernel_size=(2, 1), stride=(1, 1))
+  (conv2): Conv2d(64, 64, kernel_size=(2, 1), stride=(1, 1))
+  (conv3): Conv2d(64, 64, kernel_size=(2, 1), stride=(1, 1))
+  (conv4): Conv2d(64, 64, kernel_size=(2, 1), stride=(1, 1))
+  (lstm): LSTM(768, 128)
+  (dropout): Dropout(p=0.5, inplace=False)
+  (classifier): Linear(in_features=128, out_features=19, bias=True)
+  (activation): ReLU()
+  (gamma_function): gammaFunction()
+  (quantizer): UniformQuantizerSTE()
+)
+Class weights: [0.13029114 1.75072965 1.57704392 1.47177108 1.71860476 1.68426018
+ 1.49397846 1.61557802 1.5554748  1.5185867  1.70898273 1.58566072
+ 1.54669465 1.5319738  1.60252578 1.58519138 1.51126296 1.63286268
+ 1.58540468]
+Epoch: [001/030]
+TRAINING:	avg. loss 1.3475
+VALIDATION:	avg. loss 2.8630
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 23.89 (%) Prec 27.57 (%) Rec 23.89 (%) F1 19.18 (%)
+New best F1 19.18% at epoch 1, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_9/best_loso_sbj_9.pth.tar
+Epoch: [002/030]
+TRAINING:	avg. loss 1.0647
+VALIDATION:	avg. loss 2.8932
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 24.21 (%) Prec 29.68 (%) Rec 24.21 (%) F1 19.51 (%)
+New best F1 19.51% at epoch 2, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_9/best_loso_sbj_9.pth.tar
+Epoch: [003/030]
+TRAINING:	avg. loss 0.9989
+VALIDATION:	avg. loss 3.0063
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 24.20 (%) Prec 28.50 (%) Rec 24.20 (%) F1 19.34 (%)
+Epoch: [004/030]
+TRAINING:	avg. loss 0.9624
+VALIDATION:	avg. loss 3.1097
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 24.55 (%) Prec 30.05 (%) Rec 24.55 (%) F1 19.99 (%)
+New best F1 19.99% at epoch 4, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_9/best_loso_sbj_9.pth.tar
+Epoch: [005/030]
+TRAINING:	avg. loss 0.9359
+VALIDATION:	avg. loss 3.1286
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 24.57 (%) Prec 27.90 (%) Rec 24.57 (%) F1 19.48 (%)
+Epoch: [006/030]
+TRAINING:	avg. loss 0.9161
+VALIDATION:	avg. loss 3.2558
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 23.52 (%) Prec 28.51 (%) Rec 23.52 (%) F1 18.86 (%)
+Epoch: [007/030]
+TRAINING:	avg. loss 0.8984
+VALIDATION:	avg. loss 3.2544
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 24.43 (%) Prec 29.00 (%) Rec 24.43 (%) F1 19.84 (%)
+Epoch: [008/030]
+TRAINING:	avg. loss 0.8845
+VALIDATION:	avg. loss 3.3361
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 24.06 (%) Prec 29.04 (%) Rec 24.06 (%) F1 19.14 (%)
+Epoch: [009/030]
+TRAINING:	avg. loss 0.8730
+VALIDATION:	avg. loss 3.3285
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 24.89 (%) Prec 29.25 (%) Rec 24.89 (%) F1 19.99 (%)
+Epoch: [010/030]
+TRAINING:	avg. loss 0.8619
+VALIDATION:	avg. loss 3.3064
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 24.60 (%) Prec 29.08 (%) Rec 24.60 (%) F1 20.21 (%)
+New best F1 20.21% at epoch 10, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_9/best_loso_sbj_9.pth.tar
+Epoch: [011/030]
+TRAINING:	avg. loss 0.8516
+VALIDATION:	avg. loss 3.3653
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 24.69 (%) Prec 31.20 (%) Rec 24.69 (%) F1 20.25 (%)
+New best F1 20.25% at epoch 11, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_9/best_loso_sbj_9.pth.tar
+Epoch: [012/030]
+TRAINING:	avg. loss 0.8447
+VALIDATION:	avg. loss 3.4665
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 24.58 (%) Prec 29.21 (%) Rec 24.58 (%) F1 19.84 (%)
+Epoch: [013/030]
+TRAINING:	avg. loss 0.8372
+VALIDATION:	avg. loss 3.4570
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 24.20 (%) Prec 29.75 (%) Rec 24.20 (%) F1 19.30 (%)
+Epoch: [014/030]
+TRAINING:	avg. loss 0.8299
+VALIDATION:	avg. loss 3.4893
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 25.21 (%) Prec 30.67 (%) Rec 25.21 (%) F1 20.46 (%)
+New best F1 20.46% at epoch 14, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_9/best_loso_sbj_9.pth.tar
+Epoch: [015/030]
+TRAINING:	avg. loss 0.8246
+VALIDATION:	avg. loss 3.3656
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 25.50 (%) Prec 30.14 (%) Rec 25.50 (%) F1 21.04 (%)
+New best F1 21.04% at epoch 15, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_9/best_loso_sbj_9.pth.tar
+Epoch: [016/030]
+TRAINING:	avg. loss 0.8189
+VALIDATION:	avg. loss 3.4781
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 25.41 (%) Prec 30.29 (%) Rec 25.41 (%) F1 20.81 (%)
+Epoch: [017/030]
+TRAINING:	avg. loss 0.8147
+VALIDATION:	avg. loss 3.5993
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 24.03 (%) Prec 29.48 (%) Rec 24.03 (%) F1 18.82 (%)
+Epoch: [018/030]
+TRAINING:	avg. loss 0.8087
+VALIDATION:	avg. loss 3.5461
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 23.62 (%) Prec 28.66 (%) Rec 23.62 (%) F1 18.65 (%)
+Epoch: [019/030]
+TRAINING:	avg. loss 0.8045
+VALIDATION:	avg. loss 3.6198
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 24.37 (%) Prec 28.90 (%) Rec 24.37 (%) F1 19.48 (%)
+Epoch: [020/030]
+TRAINING:	avg. loss 0.7998
+VALIDATION:	avg. loss 3.5452
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 24.03 (%) Prec 28.84 (%) Rec 24.03 (%) F1 19.20 (%)
+Epoch: [021/030]
+TRAINING:	avg. loss 0.7940
+VALIDATION:	avg. loss 3.6197
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 23.85 (%) Prec 29.08 (%) Rec 23.85 (%) F1 18.88 (%)
+Epoch: [022/030]
+TRAINING:	avg. loss 0.7906
+VALIDATION:	avg. loss 3.6868
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 24.06 (%) Prec 29.47 (%) Rec 24.06 (%) F1 18.85 (%)
+Epoch: [023/030]
+TRAINING:	avg. loss 0.7870
+VALIDATION:	avg. loss 3.5883
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 24.34 (%) Prec 29.78 (%) Rec 24.34 (%) F1 19.66 (%)
+Epoch: [024/030]
+TRAINING:	avg. loss 0.7832
+VALIDATION:	avg. loss 3.7307
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 24.78 (%) Prec 30.66 (%) Rec 24.78 (%) F1 20.19 (%)
+Epoch: [025/030]
+TRAINING:	avg. loss 0.7807
+VALIDATION:	avg. loss 3.6587
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 25.27 (%) Prec 30.35 (%) Rec 25.27 (%) F1 20.76 (%)
+Epoch: [026/030]
+TRAINING:	avg. loss 0.7770
+VALIDATION:	avg. loss 3.7961
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 23.69 (%) Prec 28.38 (%) Rec 23.69 (%) F1 18.57 (%)
+Epoch: [027/030]
+TRAINING:	avg. loss 0.7740
+VALIDATION:	avg. loss 3.7329
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 23.94 (%) Prec 28.63 (%) Rec 23.94 (%) F1 18.86 (%)
+Epoch: [028/030]
+TRAINING:	avg. loss 0.7717
+VALIDATION:	avg. loss 3.7133
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 24.94 (%) Prec 30.05 (%) Rec 24.94 (%) F1 20.47 (%)
+Epoch: [029/030]
+TRAINING:	avg. loss 0.7684
+VALIDATION:	avg. loss 3.8773
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 23.92 (%) Prec 29.27 (%) Rec 23.92 (%) F1 19.21 (%)
+Epoch: [030/030]
+TRAINING:	avg. loss 0.7659
+VALIDATION:	avg. loss 3.7229
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 24.21 (%) Prec 28.55 (%) Rec 24.21 (%) F1 19.20 (%)
+
+FINAL RESULTS SUBJECT 9
+TRAINING:	avg. loss 0.86
+VALIDATION:	avg. loss 3.45
+
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) 
+		Acc 24.21 (%) Prec 28.55 (%) Rec 24.21 (%) F1 19.20 (%)
+
+Split 11 / 22
+Training data shape: (3267150, 14)
+Validation data shape: (199250, 14)
+Min/ Max values in training data: [-1.00, 1.00]
+Min/ Max values in validation data: [-0.98, 1.00]
+Number of learnable parameters for DeepConvLSTM: 487189
+DeepConvLSTM(
+  (conv1): Conv2d(1, 64, kernel_size=(2, 1), stride=(1, 1))
+  (conv2): Conv2d(64, 64, kernel_size=(2, 1), stride=(1, 1))
+  (conv3): Conv2d(64, 64, kernel_size=(2, 1), stride=(1, 1))
+  (conv4): Conv2d(64, 64, kernel_size=(2, 1), stride=(1, 1))
+  (lstm): LSTM(768, 128)
+  (dropout): Dropout(p=0.5, inplace=False)
+  (classifier): Linear(in_features=128, out_features=19, bias=True)
+  (activation): ReLU()
+  (gamma_function): gammaFunction()
+  (quantizer): UniformQuantizerSTE()
+)
+Class weights: [0.13565022 1.687713   1.5603523  1.42983638 1.6645782  1.65091368
+ 1.45244592 1.56362999 1.51542544 1.46810843 1.66269497 1.55776543
+ 1.4955361  1.49168283 1.56837929 1.5564118  1.4713873  1.59283073
+ 1.53890243]
+Epoch: [001/030]
+TRAINING:	avg. loss 1.3933
+VALIDATION:	avg. loss 2.1739
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 58.27 (%) Prec 36.57 (%) Rec 58.27 (%) F1 40.15 (%)
+New best F1 40.15% at epoch 1, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_10/best_loso_sbj_10.pth.tar
+Epoch: [002/030]
+TRAINING:	avg. loss 1.1036
+VALIDATION:	avg. loss 2.1614
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 59.97 (%) Prec 37.73 (%) Rec 59.97 (%) F1 41.58 (%)
+New best F1 41.58% at epoch 2, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_10/best_loso_sbj_10.pth.tar
+Epoch: [003/030]
+TRAINING:	avg. loss 1.0291
+VALIDATION:	avg. loss 2.1312
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 61.40 (%) Prec 39.44 (%) Rec 61.40 (%) F1 43.43 (%)
+New best F1 43.43% at epoch 3, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_10/best_loso_sbj_10.pth.tar
+Epoch: [004/030]
+TRAINING:	avg. loss 0.9861
+VALIDATION:	avg. loss 2.1562
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 60.60 (%) Prec 39.49 (%) Rec 60.60 (%) F1 42.98 (%)
+Epoch: [005/030]
+TRAINING:	avg. loss 0.9554
+VALIDATION:	avg. loss 2.1490
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 61.52 (%) Prec 38.79 (%) Rec 61.52 (%) F1 42.84 (%)
+Epoch: [006/030]
+TRAINING:	avg. loss 0.9334
+VALIDATION:	avg. loss 2.1394
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 61.18 (%) Prec 40.16 (%) Rec 61.18 (%) F1 44.02 (%)
+New best F1 44.02% at epoch 6, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_10/best_loso_sbj_10.pth.tar
+Epoch: [007/030]
+TRAINING:	avg. loss 0.9156
+VALIDATION:	avg. loss 2.1234
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 61.59 (%) Prec 41.22 (%) Rec 61.59 (%) F1 44.63 (%)
+New best F1 44.63% at epoch 7, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_10/best_loso_sbj_10.pth.tar
+Epoch: [008/030]
+TRAINING:	avg. loss 0.9004
+VALIDATION:	avg. loss 2.2054
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 61.76 (%) Prec 39.89 (%) Rec 61.76 (%) F1 43.72 (%)
+Epoch: [009/030]
+TRAINING:	avg. loss 0.8877
+VALIDATION:	avg. loss 2.0308
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 62.97 (%) Prec 42.05 (%) Rec 62.97 (%) F1 46.32 (%)
+New best F1 46.32% at epoch 9, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_10/best_loso_sbj_10.pth.tar
+Epoch: [010/030]
+TRAINING:	avg. loss 0.8768
+VALIDATION:	avg. loss 2.1655
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 62.74 (%) Prec 41.42 (%) Rec 62.74 (%) F1 45.10 (%)
+Epoch: [011/030]
+TRAINING:	avg. loss 0.8653
+VALIDATION:	avg. loss 2.1803
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 61.72 (%) Prec 40.70 (%) Rec 61.72 (%) F1 44.51 (%)
+Epoch: [012/030]
+TRAINING:	avg. loss 0.8574
+VALIDATION:	avg. loss 2.1910
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 61.73 (%) Prec 40.87 (%) Rec 61.73 (%) F1 44.43 (%)
+Epoch: [013/030]
+TRAINING:	avg. loss 0.8486
+VALIDATION:	avg. loss 2.1899
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 63.03 (%) Prec 41.94 (%) Rec 63.03 (%) F1 45.55 (%)
+Epoch: [014/030]
+TRAINING:	avg. loss 0.8417
+VALIDATION:	avg. loss 2.1941
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 62.89 (%) Prec 42.10 (%) Rec 62.89 (%) F1 45.66 (%)
+Epoch: [015/030]
+TRAINING:	avg. loss 0.8355
+VALIDATION:	avg. loss 2.1452
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 62.73 (%) Prec 41.98 (%) Rec 62.73 (%) F1 45.71 (%)
+Epoch: [016/030]
+TRAINING:	avg. loss 0.8294
+VALIDATION:	avg. loss 2.1449
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 62.69 (%) Prec 41.37 (%) Rec 62.69 (%) F1 45.25 (%)
+Epoch: [017/030]
+TRAINING:	avg. loss 0.8243
+VALIDATION:	avg. loss 2.1452
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 62.70 (%) Prec 41.88 (%) Rec 62.70 (%) F1 45.64 (%)
+Epoch: [018/030]
+TRAINING:	avg. loss 0.8195
+VALIDATION:	avg. loss 2.1686
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 62.31 (%) Prec 41.51 (%) Rec 62.31 (%) F1 45.46 (%)
+Epoch: [019/030]
+TRAINING:	avg. loss 0.8147
+VALIDATION:	avg. loss 2.1988
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 61.19 (%) Prec 40.86 (%) Rec 61.19 (%) F1 44.30 (%)
+Epoch: [020/030]
+TRAINING:	avg. loss 0.8101
+VALIDATION:	avg. loss 2.1344
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 62.22 (%) Prec 41.88 (%) Rec 62.22 (%) F1 45.49 (%)
+Epoch: [021/030]
+TRAINING:	avg. loss 0.8030
+VALIDATION:	avg. loss 2.1920
+		Avg. mAP 0.00 (%) mAP@0.3 0.02 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 62.56 (%) Prec 40.76 (%) Rec 62.56 (%) F1 44.87 (%)
+Epoch: [022/030]
+TRAINING:	avg. loss 0.7996
+VALIDATION:	avg. loss 2.2123
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 63.08 (%) Prec 42.19 (%) Rec 63.08 (%) F1 45.96 (%)
+Epoch: [023/030]
+TRAINING:	avg. loss 0.7964
+VALIDATION:	avg. loss 2.2144
+		Avg. mAP 0.00 (%) mAP@0.3 0.02 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 62.76 (%) Prec 42.04 (%) Rec 62.76 (%) F1 45.87 (%)
+Epoch: [024/030]
+TRAINING:	avg. loss 0.7928
+VALIDATION:	avg. loss 2.1843
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 62.15 (%) Prec 41.30 (%) Rec 62.15 (%) F1 45.18 (%)
+Epoch: [025/030]
+TRAINING:	avg. loss 0.7893
+VALIDATION:	avg. loss 2.1208
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 63.21 (%) Prec 41.97 (%) Rec 63.21 (%) F1 46.10 (%)
+Epoch: [026/030]
+TRAINING:	avg. loss 0.7860
+VALIDATION:	avg. loss 2.1607
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 63.17 (%) Prec 42.25 (%) Rec 63.17 (%) F1 46.12 (%)
+Epoch: [027/030]
+TRAINING:	avg. loss 0.7831
+VALIDATION:	avg. loss 2.1903
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 62.63 (%) Prec 42.01 (%) Rec 62.63 (%) F1 45.77 (%)
+Epoch: [028/030]
+TRAINING:	avg. loss 0.7809
+VALIDATION:	avg. loss 2.2155
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 63.06 (%) Prec 41.44 (%) Rec 63.06 (%) F1 45.41 (%)
+Epoch: [029/030]
+TRAINING:	avg. loss 0.7783
+VALIDATION:	avg. loss 2.2596
+		Avg. mAP 0.00 (%) mAP@0.3 0.02 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 62.27 (%) Prec 41.33 (%) Rec 62.27 (%) F1 45.07 (%)
+Epoch: [030/030]
+TRAINING:	avg. loss 0.7742
+VALIDATION:	avg. loss 2.2057
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 62.36 (%) Prec 41.95 (%) Rec 62.36 (%) F1 45.64 (%)
+
+FINAL RESULTS SUBJECT 10
+TRAINING:	avg. loss 0.87
+VALIDATION:	avg. loss 2.17
+
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) 
+		Acc 62.36 (%) Prec 41.95 (%) Rec 62.36 (%) F1 45.64 (%)
+
+Split 12 / 22
+Training data shape: (3355300, 14)
+Validation data shape: (111100, 14)
+Min/ Max values in training data: [-1.00, 1.00]
+Min/ Max values in validation data: [-0.87, 0.99]
+Number of learnable parameters for DeepConvLSTM: 487189
+DeepConvLSTM(
+  (conv1): Conv2d(1, 64, kernel_size=(2, 1), stride=(1, 1))
+  (conv2): Conv2d(64, 64, kernel_size=(2, 1), stride=(1, 1))
+  (conv3): Conv2d(64, 64, kernel_size=(2, 1), stride=(1, 1))
+  (conv4): Conv2d(64, 64, kernel_size=(2, 1), stride=(1, 1))
+  (lstm): LSTM(768, 128)
+  (dropout): Dropout(p=0.5, inplace=False)
+  (classifier): Linear(in_features=128, out_features=19, bias=True)
+  (activation): ReLU()
+  (gamma_function): gammaFunction()
+  (quantizer): UniformQuantizerSTE()
+)
+Class weights: [0.1306656  1.74947675 1.57805139 1.46702459 1.70993768 1.68724438
+ 1.49747875 1.60236545 1.55491586 1.50791307 1.70123973 1.59015843
+ 1.53532681 1.52966125 1.60232183 1.59028732 1.50340701 1.63349229
+ 1.5815706 ]
+Epoch: [001/030]
+TRAINING:	avg. loss 1.3952
+VALIDATION:	avg. loss 1.1898
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 68.98 (%) Prec 61.20 (%) Rec 68.98 (%) F1 62.75 (%)
+New best F1 62.75% at epoch 1, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_11/best_loso_sbj_11.pth.tar
+Epoch: [002/030]
+TRAINING:	avg. loss 1.1111
+VALIDATION:	avg. loss 1.1537
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 68.87 (%) Prec 61.59 (%) Rec 68.87 (%) F1 63.14 (%)
+New best F1 63.14% at epoch 2, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_11/best_loso_sbj_11.pth.tar
+Epoch: [003/030]
+TRAINING:	avg. loss 1.0373
+VALIDATION:	avg. loss 1.0927
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 72.47 (%) Prec 64.72 (%) Rec 72.47 (%) F1 66.28 (%)
+New best F1 66.28% at epoch 3, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_11/best_loso_sbj_11.pth.tar
+Epoch: [004/030]
+TRAINING:	avg. loss 0.9968
+VALIDATION:	avg. loss 1.0824
+		Avg. mAP 0.01 (%) mAP@0.3 0.02 (%) mAP@0.4 0.02 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 69.73 (%) Prec 63.17 (%) Rec 69.73 (%) F1 64.50 (%)
+Epoch: [005/030]
+TRAINING:	avg. loss 0.9697
+VALIDATION:	avg. loss 1.0722
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 71.91 (%) Prec 65.06 (%) Rec 71.91 (%) F1 66.52 (%)
+New best F1 66.52% at epoch 5, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_11/best_loso_sbj_11.pth.tar
+Epoch: [006/030]
+TRAINING:	avg. loss 0.9475
+VALIDATION:	avg. loss 1.0505
+		Avg. mAP 0.01 (%) mAP@0.3 0.02 (%) mAP@0.4 0.02 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 71.82 (%) Prec 65.65 (%) Rec 71.82 (%) F1 66.88 (%)
+New best F1 66.88% at epoch 6, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_11/best_loso_sbj_11.pth.tar
+Epoch: [007/030]
+TRAINING:	avg. loss 0.9291
+VALIDATION:	avg. loss 1.0707
+		Avg. mAP 0.01 (%) mAP@0.3 0.02 (%) mAP@0.4 0.02 (%) mAP@0.5 0.02 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 70.14 (%) Prec 64.47 (%) Rec 70.14 (%) F1 65.36 (%)
+Epoch: [008/030]
+TRAINING:	avg. loss 0.9141
+VALIDATION:	avg. loss 1.0415
+		Avg. mAP 0.01 (%) mAP@0.3 0.02 (%) mAP@0.4 0.02 (%) mAP@0.5 0.02 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 70.70 (%) Prec 64.72 (%) Rec 70.70 (%) F1 66.03 (%)
+Epoch: [009/030]
+TRAINING:	avg. loss 0.9015
+VALIDATION:	avg. loss 1.0632
+		Avg. mAP 0.01 (%) mAP@0.3 0.02 (%) mAP@0.4 0.02 (%) mAP@0.5 0.02 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 72.20 (%) Prec 65.80 (%) Rec 72.20 (%) F1 67.14 (%)
+New best F1 67.14% at epoch 9, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_11/best_loso_sbj_11.pth.tar
+Epoch: [010/030]
+TRAINING:	avg. loss 0.8909
+VALIDATION:	avg. loss 1.0590
+		Avg. mAP 0.01 (%) mAP@0.3 0.02 (%) mAP@0.4 0.02 (%) mAP@0.5 0.02 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 70.61 (%) Prec 64.37 (%) Rec 70.61 (%) F1 65.72 (%)
+Epoch: [011/030]
+TRAINING:	avg. loss 0.8793
+VALIDATION:	avg. loss 1.0408
+		Avg. mAP 0.01 (%) mAP@0.3 0.02 (%) mAP@0.4 0.02 (%) mAP@0.5 0.02 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 71.62 (%) Prec 65.69 (%) Rec 71.62 (%) F1 67.01 (%)
+Epoch: [012/030]
+TRAINING:	avg. loss 0.8691
+VALIDATION:	avg. loss 1.0374
+		Avg. mAP 0.01 (%) mAP@0.3 0.02 (%) mAP@0.4 0.02 (%) mAP@0.5 0.02 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 73.19 (%) Prec 66.69 (%) Rec 73.19 (%) F1 68.13 (%)
+New best F1 68.13% at epoch 12, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_11/best_loso_sbj_11.pth.tar
+Epoch: [013/030]
+TRAINING:	avg. loss 0.8626
+VALIDATION:	avg. loss 1.0435
+		Avg. mAP 0.01 (%) mAP@0.3 0.02 (%) mAP@0.4 0.02 (%) mAP@0.5 0.02 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 70.05 (%) Prec 65.32 (%) Rec 70.05 (%) F1 65.97 (%)
+Epoch: [014/030]
+TRAINING:	avg. loss 0.8548
+VALIDATION:	avg. loss 1.0113
+		Avg. mAP 0.01 (%) mAP@0.3 0.02 (%) mAP@0.4 0.02 (%) mAP@0.5 0.02 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 74.62 (%) Prec 67.82 (%) Rec 74.62 (%) F1 69.57 (%)
+New best F1 69.57% at epoch 14, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_11/best_loso_sbj_11.pth.tar
+Epoch: [015/030]
+TRAINING:	avg. loss 0.8491
+VALIDATION:	avg. loss 1.0343
+		Avg. mAP 0.01 (%) mAP@0.3 0.02 (%) mAP@0.4 0.02 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 72.71 (%) Prec 65.96 (%) Rec 72.71 (%) F1 67.39 (%)
+Epoch: [016/030]
+TRAINING:	avg. loss 0.8429
+VALIDATION:	avg. loss 1.0315
+		Avg. mAP 0.01 (%) mAP@0.3 0.02 (%) mAP@0.4 0.02 (%) mAP@0.5 0.02 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 70.71 (%) Prec 65.54 (%) Rec 70.71 (%) F1 66.33 (%)
+Epoch: [017/030]
+TRAINING:	avg. loss 0.8375
+VALIDATION:	avg. loss 1.0200
+		Avg. mAP 0.01 (%) mAP@0.3 0.02 (%) mAP@0.4 0.02 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 74.05 (%) Prec 67.70 (%) Rec 74.05 (%) F1 69.08 (%)
+Epoch: [018/030]
+TRAINING:	avg. loss 0.8312
+VALIDATION:	avg. loss 1.0238
+		Avg. mAP 0.01 (%) mAP@0.3 0.02 (%) mAP@0.4 0.02 (%) mAP@0.5 0.02 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 72.41 (%) Prec 66.07 (%) Rec 72.41 (%) F1 67.45 (%)
+Epoch: [019/030]
+TRAINING:	avg. loss 0.8265
+VALIDATION:	avg. loss 1.0387
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 70.28 (%) Prec 64.50 (%) Rec 70.28 (%) F1 65.53 (%)
+Epoch: [020/030]
+TRAINING:	avg. loss 0.8225
+VALIDATION:	avg. loss 1.0544
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 70.30 (%) Prec 64.45 (%) Rec 70.30 (%) F1 65.40 (%)
+Epoch: [021/030]
+TRAINING:	avg. loss 0.8160
+VALIDATION:	avg. loss 1.0073
+		Avg. mAP 0.01 (%) mAP@0.3 0.02 (%) mAP@0.4 0.02 (%) mAP@0.5 0.02 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 74.99 (%) Prec 68.97 (%) Rec 74.99 (%) F1 70.28 (%)
+New best F1 70.28% at epoch 21, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_11/best_loso_sbj_11.pth.tar
+Epoch: [022/030]
+TRAINING:	avg. loss 0.8117
+VALIDATION:	avg. loss 1.0206
+		Avg. mAP 0.00 (%) mAP@0.3 0.02 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 73.58 (%) Prec 66.84 (%) Rec 73.58 (%) F1 68.52 (%)
+Epoch: [023/030]
+TRAINING:	avg. loss 0.8086
+VALIDATION:	avg. loss 1.0213
+		Avg. mAP 0.01 (%) mAP@0.3 0.02 (%) mAP@0.4 0.02 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 72.28 (%) Prec 67.11 (%) Rec 72.28 (%) F1 67.93 (%)
+Epoch: [024/030]
+TRAINING:	avg. loss 0.8050
+VALIDATION:	avg. loss 1.0175
+		Avg. mAP 0.01 (%) mAP@0.3 0.02 (%) mAP@0.4 0.02 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 74.06 (%) Prec 67.82 (%) Rec 74.06 (%) F1 69.13 (%)
+Epoch: [025/030]
+TRAINING:	avg. loss 0.8017
+VALIDATION:	avg. loss 0.9995
+		Avg. mAP 0.00 (%) mAP@0.3 0.02 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 73.85 (%) Prec 68.14 (%) Rec 73.85 (%) F1 69.31 (%)
+Epoch: [026/030]
+TRAINING:	avg. loss 0.7982
+VALIDATION:	avg. loss 1.0250
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 73.44 (%) Prec 67.07 (%) Rec 73.44 (%) F1 68.42 (%)
+Epoch: [027/030]
+TRAINING:	avg. loss 0.7939
+VALIDATION:	avg. loss 1.0480
+		Avg. mAP 0.00 (%) mAP@0.3 0.02 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 70.63 (%) Prec 64.82 (%) Rec 70.63 (%) F1 65.98 (%)
+Epoch: [028/030]
+TRAINING:	avg. loss 0.7918
+VALIDATION:	avg. loss 1.0035
+		Avg. mAP 0.00 (%) mAP@0.3 0.02 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 74.71 (%) Prec 69.40 (%) Rec 74.71 (%) F1 70.44 (%)
+New best F1 70.44% at epoch 28, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_11/best_loso_sbj_11.pth.tar
+Epoch: [029/030]
+TRAINING:	avg. loss 0.7885
+VALIDATION:	avg. loss 1.0162
+		Avg. mAP 0.01 (%) mAP@0.3 0.02 (%) mAP@0.4 0.02 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 71.45 (%) Prec 66.21 (%) Rec 71.45 (%) F1 67.35 (%)
+Epoch: [030/030]
+TRAINING:	avg. loss 0.7859
+VALIDATION:	avg. loss 1.0288
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 70.96 (%) Prec 65.30 (%) Rec 70.96 (%) F1 66.31 (%)
+
+FINAL RESULTS SUBJECT 11
+TRAINING:	avg. loss 0.89
+VALIDATION:	avg. loss 1.05
+
+		Avg. mAP 0.00 (%) mAP@0.3 0.02 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) 
+		Acc 70.96 (%) Prec 65.30 (%) Rec 70.96 (%) F1 66.31 (%)
+
+Split 13 / 22
+Training data shape: (3302900, 14)
+Validation data shape: (163500, 14)
+Min/ Max values in training data: [-1.00, 1.00]
+Min/ Max values in validation data: [-0.98, 0.99]
+Number of learnable parameters for DeepConvLSTM: 487189
+DeepConvLSTM(
+  (conv1): Conv2d(1, 64, kernel_size=(2, 1), stride=(1, 1))
+  (conv2): Conv2d(64, 64, kernel_size=(2, 1), stride=(1, 1))
+  (conv3): Conv2d(64, 64, kernel_size=(2, 1), stride=(1, 1))
+  (conv4): Conv2d(64, 64, kernel_size=(2, 1), stride=(1, 1))
+  (lstm): LSTM(768, 128)
+  (dropout): Dropout(p=0.5, inplace=False)
+  (classifier): Linear(in_features=128, out_features=19, bias=True)
+  (activation): ReLU()
+  (gamma_function): gammaFunction()
+  (quantizer): UniformQuantizerSTE()
+)
+Class weights: [0.13364216 1.72246229 1.55850431 1.44634895 1.68971281 1.64790489
+ 1.4637405  1.59395994 1.53403663 1.48779417 1.67544621 1.56769653
+ 1.51431193 1.50506848 1.57327265 1.56431067 1.48829095 1.60896431
+ 1.55595144]
+Epoch: [001/030]
+TRAINING:	avg. loss 1.3875
+VALIDATION:	avg. loss 1.5281
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 64.74 (%) Prec 49.02 (%) Rec 64.74 (%) F1 52.38 (%)
+New best F1 52.38% at epoch 1, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_12/best_loso_sbj_12.pth.tar
+Epoch: [002/030]
+TRAINING:	avg. loss 1.1004
+VALIDATION:	avg. loss 1.5013
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 67.15 (%) Prec 47.93 (%) Rec 67.15 (%) F1 52.57 (%)
+New best F1 52.57% at epoch 2, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_12/best_loso_sbj_12.pth.tar
+Epoch: [003/030]
+TRAINING:	avg. loss 1.0259
+VALIDATION:	avg. loss 1.4956
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 67.92 (%) Prec 49.61 (%) Rec 67.92 (%) F1 53.61 (%)
+New best F1 53.61% at epoch 3, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_12/best_loso_sbj_12.pth.tar
+Epoch: [004/030]
+TRAINING:	avg. loss 0.9829
+VALIDATION:	avg. loss 1.4809
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 67.98 (%) Prec 49.38 (%) Rec 67.98 (%) F1 53.58 (%)
+Epoch: [005/030]
+TRAINING:	avg. loss 0.9534
+VALIDATION:	avg. loss 1.4237
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 68.85 (%) Prec 52.24 (%) Rec 68.85 (%) F1 55.58 (%)
+New best F1 55.58% at epoch 5, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_12/best_loso_sbj_12.pth.tar
+Epoch: [006/030]
+TRAINING:	avg. loss 0.9313
+VALIDATION:	avg. loss 1.4056
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 68.01 (%) Prec 51.13 (%) Rec 68.01 (%) F1 54.97 (%)
+Epoch: [007/030]
+TRAINING:	avg. loss 0.9135
+VALIDATION:	avg. loss 1.3914
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 68.53 (%) Prec 51.01 (%) Rec 68.53 (%) F1 55.29 (%)
+Epoch: [008/030]
+TRAINING:	avg. loss 0.8978
+VALIDATION:	avg. loss 1.4114
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 69.04 (%) Prec 52.18 (%) Rec 69.04 (%) F1 56.00 (%)
+New best F1 56.00% at epoch 8, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_12/best_loso_sbj_12.pth.tar
+Epoch: [009/030]
+TRAINING:	avg. loss 0.8856
+VALIDATION:	avg. loss 1.4298
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 69.39 (%) Prec 51.47 (%) Rec 69.39 (%) F1 55.49 (%)
+Epoch: [010/030]
+TRAINING:	avg. loss 0.8735
+VALIDATION:	avg. loss 1.3735
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 69.29 (%) Prec 52.96 (%) Rec 69.29 (%) F1 56.76 (%)
+New best F1 56.76% at epoch 10, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_12/best_loso_sbj_12.pth.tar
+Epoch: [011/030]
+TRAINING:	avg. loss 0.8618
+VALIDATION:	avg. loss 1.3575
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 68.07 (%) Prec 53.71 (%) Rec 68.07 (%) F1 57.52 (%)
+New best F1 57.52% at epoch 11, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_12/best_loso_sbj_12.pth.tar
+Epoch: [012/030]
+TRAINING:	avg. loss 0.8546
+VALIDATION:	avg. loss 1.3967
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 69.35 (%) Prec 52.50 (%) Rec 69.35 (%) F1 56.22 (%)
+Epoch: [013/030]
+TRAINING:	avg. loss 0.8464
+VALIDATION:	avg. loss 1.4117
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 69.43 (%) Prec 51.82 (%) Rec 69.43 (%) F1 55.75 (%)
+Epoch: [014/030]
+TRAINING:	avg. loss 0.8407
+VALIDATION:	avg. loss 1.4013
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 69.72 (%) Prec 53.58 (%) Rec 69.72 (%) F1 56.99 (%)
+Epoch: [015/030]
+TRAINING:	avg. loss 0.8339
+VALIDATION:	avg. loss 1.3618
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 68.92 (%) Prec 53.53 (%) Rec 68.92 (%) F1 57.91 (%)
+New best F1 57.91% at epoch 15, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_12/best_loso_sbj_12.pth.tar
+Epoch: [016/030]
+TRAINING:	avg. loss 0.8284
+VALIDATION:	avg. loss 1.3472
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 67.28 (%) Prec 53.71 (%) Rec 67.28 (%) F1 57.26 (%)
+Epoch: [017/030]
+TRAINING:	avg. loss 0.8237
+VALIDATION:	avg. loss 1.3934
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 70.30 (%) Prec 53.51 (%) Rec 70.30 (%) F1 57.47 (%)
+Epoch: [018/030]
+TRAINING:	avg. loss 0.8178
+VALIDATION:	avg. loss 1.4063
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 68.85 (%) Prec 52.69 (%) Rec 68.85 (%) F1 57.27 (%)
+Epoch: [019/030]
+TRAINING:	avg. loss 0.8130
+VALIDATION:	avg. loss 1.3809
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 69.74 (%) Prec 54.06 (%) Rec 69.74 (%) F1 57.74 (%)
+Epoch: [020/030]
+TRAINING:	avg. loss 0.8087
+VALIDATION:	avg. loss 1.3947
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 69.64 (%) Prec 52.78 (%) Rec 69.64 (%) F1 56.82 (%)
+Epoch: [021/030]
+TRAINING:	avg. loss 0.8021
+VALIDATION:	avg. loss 1.3472
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 68.78 (%) Prec 54.14 (%) Rec 68.78 (%) F1 58.28 (%)
+New best F1 58.28% at epoch 21, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_12/best_loso_sbj_12.pth.tar
+Epoch: [022/030]
+TRAINING:	avg. loss 0.7973
+VALIDATION:	avg. loss 1.3510
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 69.56 (%) Prec 55.07 (%) Rec 69.56 (%) F1 58.21 (%)
+Epoch: [023/030]
+TRAINING:	avg. loss 0.7938
+VALIDATION:	avg. loss 1.3720
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 69.62 (%) Prec 54.64 (%) Rec 69.62 (%) F1 57.96 (%)
+Epoch: [024/030]
+TRAINING:	avg. loss 0.7913
+VALIDATION:	avg. loss 1.3500
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 68.56 (%) Prec 54.38 (%) Rec 68.56 (%) F1 58.41 (%)
+New best F1 58.41% at epoch 24, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_12/best_loso_sbj_12.pth.tar
+Epoch: [025/030]
+TRAINING:	avg. loss 0.7869
+VALIDATION:	avg. loss 1.3490
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 68.39 (%) Prec 54.19 (%) Rec 68.39 (%) F1 58.27 (%)
+Epoch: [026/030]
+TRAINING:	avg. loss 0.7843
+VALIDATION:	avg. loss 1.3856
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 69.45 (%) Prec 53.37 (%) Rec 69.45 (%) F1 57.33 (%)
+Epoch: [027/030]
+TRAINING:	avg. loss 0.7812
+VALIDATION:	avg. loss 1.3602
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 68.21 (%) Prec 53.96 (%) Rec 68.21 (%) F1 58.02 (%)
+Epoch: [028/030]
+TRAINING:	avg. loss 0.7787
+VALIDATION:	avg. loss 1.3801
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 70.05 (%) Prec 54.45 (%) Rec 70.05 (%) F1 58.02 (%)
+Epoch: [029/030]
+TRAINING:	avg. loss 0.7750
+VALIDATION:	avg. loss 1.3711
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 69.53 (%) Prec 53.73 (%) Rec 69.53 (%) F1 57.39 (%)
+Epoch: [030/030]
+TRAINING:	avg. loss 0.7721
+VALIDATION:	avg. loss 1.3704
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 69.54 (%) Prec 53.73 (%) Rec 69.54 (%) F1 57.64 (%)
+
+FINAL RESULTS SUBJECT 12
+TRAINING:	avg. loss 0.87
+VALIDATION:	avg. loss 1.40
+
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) 
+		Acc 69.54 (%) Prec 53.73 (%) Rec 69.54 (%) F1 57.64 (%)
+
+Split 14 / 22
+Training data shape: (3267500, 14)
+Validation data shape: (198900, 14)
+Min/ Max values in training data: [-1.00, 1.00]
+Min/ Max values in validation data: [-0.90, 0.98]
+Number of learnable parameters for DeepConvLSTM: 487189
+DeepConvLSTM(
+  (conv1): Conv2d(1, 64, kernel_size=(2, 1), stride=(1, 1))
+  (conv2): Conv2d(64, 64, kernel_size=(2, 1), stride=(1, 1))
+  (conv3): Conv2d(64, 64, kernel_size=(2, 1), stride=(1, 1))
+  (conv4): Conv2d(64, 64, kernel_size=(2, 1), stride=(1, 1))
+  (lstm): LSTM(768, 128)
+  (dropout): Dropout(p=0.5, inplace=False)
+  (classifier): Linear(in_features=128, out_features=19, bias=True)
+  (activation): ReLU()
+  (gamma_function): gammaFunction()
+  (quantizer): UniformQuantizerSTE()
+)
+Class weights: [0.13605828 1.69940348 1.53244343 1.43885587 1.6661603  1.64606533
+ 1.44973644 1.5713857  1.51675122 1.46807814 1.65428354 1.54817099
+ 1.50133781 1.48484857 1.55729791 1.54184138 1.46717632 1.58665243
+ 1.54466664]
+Epoch: [001/030]
+TRAINING:	avg. loss 1.3868
+VALIDATION:	avg. loss 1.8200
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 67.65 (%) Prec 47.10 (%) Rec 67.65 (%) F1 50.74 (%)
+New best F1 50.74% at epoch 1, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_13/best_loso_sbj_13.pth.tar
+Epoch: [002/030]
+TRAINING:	avg. loss 1.0946
+VALIDATION:	avg. loss 1.7521
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 63.07 (%) Prec 47.68 (%) Rec 63.07 (%) F1 49.80 (%)
+Epoch: [003/030]
+TRAINING:	avg. loss 1.0222
+VALIDATION:	avg. loss 1.7416
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 63.54 (%) Prec 46.98 (%) Rec 63.54 (%) F1 49.74 (%)
+Epoch: [004/030]
+TRAINING:	avg. loss 0.9807
+VALIDATION:	avg. loss 1.7722
+		Avg. mAP 0.00 (%) mAP@0.3 0.01 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 69.64 (%) Prec 49.14 (%) Rec 69.64 (%) F1 52.78 (%)
+New best F1 52.78% at epoch 4, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_13/best_loso_sbj_13.pth.tar
+Epoch: [005/030]
+TRAINING:	avg. loss 0.9507
+VALIDATION:	avg. loss 1.6751
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 71.25 (%) Prec 52.36 (%) Rec 71.25 (%) F1 55.92 (%)
+New best F1 55.92% at epoch 5, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_13/best_loso_sbj_13.pth.tar
+Epoch: [006/030]
+TRAINING:	avg. loss 0.9286
+VALIDATION:	avg. loss 1.6831
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 68.31 (%) Prec 50.15 (%) Rec 68.31 (%) F1 53.03 (%)
+Epoch: [007/030]
+TRAINING:	avg. loss 0.9111
+VALIDATION:	avg. loss 1.7035
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 70.94 (%) Prec 52.05 (%) Rec 70.94 (%) F1 55.28 (%)
+Epoch: [008/030]
+TRAINING:	avg. loss 0.8965
+VALIDATION:	avg. loss 1.6315
+		Avg. mAP 0.00 (%) mAP@0.3 0.01 (%) mAP@0.4 0.01 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 69.19 (%) Prec 52.28 (%) Rec 69.19 (%) F1 54.63 (%)
+Epoch: [009/030]
+TRAINING:	avg. loss 0.8832
+VALIDATION:	avg. loss 1.6453
+		Avg. mAP 0.00 (%) mAP@0.3 0.01 (%) mAP@0.4 0.01 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 67.10 (%) Prec 50.61 (%) Rec 67.10 (%) F1 53.85 (%)
+Epoch: [010/030]
+TRAINING:	avg. loss 0.8722
+VALIDATION:	avg. loss 1.6491
+		Avg. mAP 0.00 (%) mAP@0.3 0.01 (%) mAP@0.4 0.01 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 68.05 (%) Prec 50.05 (%) Rec 68.05 (%) F1 53.34 (%)
+Epoch: [011/030]
+TRAINING:	avg. loss 0.8621
+VALIDATION:	avg. loss 1.6293
+		Avg. mAP 0.00 (%) mAP@0.3 0.01 (%) mAP@0.4 0.01 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 71.00 (%) Prec 51.85 (%) Rec 71.00 (%) F1 55.58 (%)
+Epoch: [012/030]
+TRAINING:	avg. loss 0.8534
+VALIDATION:	avg. loss 1.7176
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 67.98 (%) Prec 50.88 (%) Rec 67.98 (%) F1 53.38 (%)
+Epoch: [013/030]
+TRAINING:	avg. loss 0.8452
+VALIDATION:	avg. loss 1.6473
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 68.81 (%) Prec 51.17 (%) Rec 68.81 (%) F1 54.24 (%)
+Epoch: [014/030]
+TRAINING:	avg. loss 0.8381
+VALIDATION:	avg. loss 1.6436
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 70.74 (%) Prec 51.74 (%) Rec 70.74 (%) F1 55.33 (%)
+Epoch: [015/030]
+TRAINING:	avg. loss 0.8332
+VALIDATION:	avg. loss 1.6415
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 69.14 (%) Prec 51.03 (%) Rec 69.14 (%) F1 54.43 (%)
+Epoch: [016/030]
+TRAINING:	avg. loss 0.8272
+VALIDATION:	avg. loss 1.6567
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 71.02 (%) Prec 53.14 (%) Rec 71.02 (%) F1 56.27 (%)
+New best F1 56.27% at epoch 16, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_13/best_loso_sbj_13.pth.tar
+Epoch: [017/030]
+TRAINING:	avg. loss 0.8218
+VALIDATION:	avg. loss 1.6434
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 70.41 (%) Prec 52.07 (%) Rec 70.41 (%) F1 55.51 (%)
+Epoch: [018/030]
+TRAINING:	avg. loss 0.8167
+VALIDATION:	avg. loss 1.6239
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 71.52 (%) Prec 52.98 (%) Rec 71.52 (%) F1 56.49 (%)
+New best F1 56.49% at epoch 18, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_13/best_loso_sbj_13.pth.tar
+Epoch: [019/030]
+TRAINING:	avg. loss 0.8125
+VALIDATION:	avg. loss 1.6911
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 68.55 (%) Prec 50.87 (%) Rec 68.55 (%) F1 53.72 (%)
+Epoch: [020/030]
+TRAINING:	avg. loss 0.8081
+VALIDATION:	avg. loss 1.6820
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 69.44 (%) Prec 52.04 (%) Rec 69.44 (%) F1 54.63 (%)
+Epoch: [021/030]
+TRAINING:	avg. loss 0.8020
+VALIDATION:	avg. loss 1.7076
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 67.87 (%) Prec 51.21 (%) Rec 67.87 (%) F1 53.26 (%)
+Epoch: [022/030]
+TRAINING:	avg. loss 0.7979
+VALIDATION:	avg. loss 1.6482
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 70.53 (%) Prec 53.05 (%) Rec 70.53 (%) F1 55.98 (%)
+Epoch: [023/030]
+TRAINING:	avg. loss 0.7937
+VALIDATION:	avg. loss 1.6580
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 70.23 (%) Prec 52.02 (%) Rec 70.23 (%) F1 55.29 (%)
+Epoch: [024/030]
+TRAINING:	avg. loss 0.7912
+VALIDATION:	avg. loss 1.6699
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 67.43 (%) Prec 51.86 (%) Rec 67.43 (%) F1 54.79 (%)
+Epoch: [025/030]
+TRAINING:	avg. loss 0.7879
+VALIDATION:	avg. loss 1.6658
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 70.68 (%) Prec 52.38 (%) Rec 70.68 (%) F1 55.69 (%)
+Epoch: [026/030]
+TRAINING:	avg. loss 0.7840
+VALIDATION:	avg. loss 1.6829
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 70.97 (%) Prec 52.93 (%) Rec 70.97 (%) F1 56.15 (%)
+Epoch: [027/030]
+TRAINING:	avg. loss 0.7818
+VALIDATION:	avg. loss 1.6436
+		Avg. mAP 0.00 (%) mAP@0.3 0.01 (%) mAP@0.4 0.01 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 71.16 (%) Prec 52.73 (%) Rec 71.16 (%) F1 55.91 (%)
+Epoch: [028/030]
+TRAINING:	avg. loss 0.7785
+VALIDATION:	avg. loss 1.6964
+		Avg. mAP 0.00 (%) mAP@0.3 0.01 (%) mAP@0.4 0.01 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 71.35 (%) Prec 52.18 (%) Rec 71.35 (%) F1 55.79 (%)
+Epoch: [029/030]
+TRAINING:	avg. loss 0.7756
+VALIDATION:	avg. loss 1.6490
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 71.69 (%) Prec 52.80 (%) Rec 71.69 (%) F1 56.37 (%)
+Epoch: [030/030]
+TRAINING:	avg. loss 0.7729
+VALIDATION:	avg. loss 1.6536
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 71.23 (%) Prec 52.36 (%) Rec 71.23 (%) F1 56.04 (%)
+
+FINAL RESULTS SUBJECT 13
+TRAINING:	avg. loss 0.87
+VALIDATION:	avg. loss 1.68
+
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) 
+		Acc 71.23 (%) Prec 52.36 (%) Rec 71.23 (%) F1 56.04 (%)
+
+Split 15 / 22
+Training data shape: (3138600, 14)
+Validation data shape: (327800, 14)
+Min/ Max values in training data: [-1.00, 1.00]
+Min/ Max values in validation data: [-0.88, 0.97]
+Number of learnable parameters for DeepConvLSTM: 487189
+DeepConvLSTM(
+  (conv1): Conv2d(1, 64, kernel_size=(2, 1), stride=(1, 1))
+  (conv2): Conv2d(64, 64, kernel_size=(2, 1), stride=(1, 1))
+  (conv3): Conv2d(64, 64, kernel_size=(2, 1), stride=(1, 1))
+  (conv4): Conv2d(64, 64, kernel_size=(2, 1), stride=(1, 1))
+  (lstm): LSTM(768, 128)
+  (dropout): Dropout(p=0.5, inplace=False)
+  (classifier): Linear(in_features=128, out_features=19, bias=True)
+  (activation): ReLU()
+  (gamma_function): gammaFunction()
+  (quantizer): UniformQuantizerSTE()
+)
+Class weights: [0.13562496 1.70615883 1.53815007 1.42243814 1.66806501 1.64769901
+ 1.45195817 1.58158091 1.51938955 1.47014012 1.67054484 1.54761813
+ 1.4887027  1.48432829 1.56699749 1.55010157 1.47502365 1.59348145
+ 1.55592737]
+Epoch: [001/030]
+TRAINING:	avg. loss 1.3836
+VALIDATION:	avg. loss 1.8954
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 52.93 (%) Prec 38.49 (%) Rec 52.93 (%) F1 39.85 (%)
+New best F1 39.85% at epoch 1, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_14/best_loso_sbj_14.pth.tar
+Epoch: [002/030]
+TRAINING:	avg. loss 1.0928
+VALIDATION:	avg. loss 1.8501
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 54.42 (%) Prec 39.18 (%) Rec 54.42 (%) F1 41.33 (%)
+New best F1 41.33% at epoch 2, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_14/best_loso_sbj_14.pth.tar
+Epoch: [003/030]
+TRAINING:	avg. loss 1.0205
+VALIDATION:	avg. loss 1.8034
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 55.24 (%) Prec 41.37 (%) Rec 55.24 (%) F1 42.83 (%)
+New best F1 42.83% at epoch 3, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_14/best_loso_sbj_14.pth.tar
+Epoch: [004/030]
+TRAINING:	avg. loss 0.9779
+VALIDATION:	avg. loss 1.8440
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 54.70 (%) Prec 40.35 (%) Rec 54.70 (%) F1 41.87 (%)
+Epoch: [005/030]
+TRAINING:	avg. loss 0.9466
+VALIDATION:	avg. loss 1.7963
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 55.34 (%) Prec 40.53 (%) Rec 55.34 (%) F1 42.68 (%)
+Epoch: [006/030]
+TRAINING:	avg. loss 0.9245
+VALIDATION:	avg. loss 1.7695
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 55.33 (%) Prec 40.91 (%) Rec 55.33 (%) F1 42.83 (%)
+Epoch: [007/030]
+TRAINING:	avg. loss 0.9061
+VALIDATION:	avg. loss 1.7525
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 55.78 (%) Prec 41.60 (%) Rec 55.78 (%) F1 43.40 (%)
+New best F1 43.40% at epoch 7, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_14/best_loso_sbj_14.pth.tar
+Epoch: [008/030]
+TRAINING:	avg. loss 0.8903
+VALIDATION:	avg. loss 1.7556
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 55.99 (%) Prec 41.64 (%) Rec 55.99 (%) F1 43.72 (%)
+New best F1 43.72% at epoch 8, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_14/best_loso_sbj_14.pth.tar
+Epoch: [009/030]
+TRAINING:	avg. loss 0.8770
+VALIDATION:	avg. loss 1.7816
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 55.71 (%) Prec 40.92 (%) Rec 55.71 (%) F1 43.05 (%)
+Epoch: [010/030]
+TRAINING:	avg. loss 0.8651
+VALIDATION:	avg. loss 1.7931
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 55.61 (%) Prec 41.01 (%) Rec 55.61 (%) F1 43.13 (%)
+Epoch: [011/030]
+TRAINING:	avg. loss 0.8526
+VALIDATION:	avg. loss 1.7418
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 56.44 (%) Prec 42.78 (%) Rec 56.44 (%) F1 44.44 (%)
+New best F1 44.44% at epoch 11, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_14/best_loso_sbj_14.pth.tar
+Epoch: [012/030]
+TRAINING:	avg. loss 0.8443
+VALIDATION:	avg. loss 1.7720
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 55.84 (%) Prec 41.59 (%) Rec 55.84 (%) F1 43.55 (%)
+Epoch: [013/030]
+TRAINING:	avg. loss 0.8368
+VALIDATION:	avg. loss 1.7561
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 55.91 (%) Prec 41.63 (%) Rec 55.91 (%) F1 43.78 (%)
+Epoch: [014/030]
+TRAINING:	avg. loss 0.8300
+VALIDATION:	avg. loss 1.7904
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 56.43 (%) Prec 41.90 (%) Rec 56.43 (%) F1 44.09 (%)
+Epoch: [015/030]
+TRAINING:	avg. loss 0.8228
+VALIDATION:	avg. loss 1.7585
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 56.15 (%) Prec 41.69 (%) Rec 56.15 (%) F1 43.83 (%)
+Epoch: [016/030]
+TRAINING:	avg. loss 0.8169
+VALIDATION:	avg. loss 1.7308
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 56.66 (%) Prec 42.78 (%) Rec 56.66 (%) F1 45.00 (%)
+New best F1 45.00% at epoch 16, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_14/best_loso_sbj_14.pth.tar
+Epoch: [017/030]
+TRAINING:	avg. loss 0.8108
+VALIDATION:	avg. loss 1.7378
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 56.57 (%) Prec 42.24 (%) Rec 56.57 (%) F1 44.49 (%)
+Epoch: [018/030]
+TRAINING:	avg. loss 0.8061
+VALIDATION:	avg. loss 1.7385
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 55.73 (%) Prec 41.65 (%) Rec 55.73 (%) F1 43.70 (%)
+Epoch: [019/030]
+TRAINING:	avg. loss 0.8007
+VALIDATION:	avg. loss 1.7639
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 56.47 (%) Prec 41.47 (%) Rec 56.47 (%) F1 44.14 (%)
+Epoch: [020/030]
+TRAINING:	avg. loss 0.7960
+VALIDATION:	avg. loss 1.7295
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 56.38 (%) Prec 42.44 (%) Rec 56.38 (%) F1 44.60 (%)
+Epoch: [021/030]
+TRAINING:	avg. loss 0.7908
+VALIDATION:	avg. loss 1.7496
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 56.11 (%) Prec 41.97 (%) Rec 56.11 (%) F1 44.02 (%)
+Epoch: [022/030]
+TRAINING:	avg. loss 0.7854
+VALIDATION:	avg. loss 1.7571
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 56.47 (%) Prec 42.48 (%) Rec 56.47 (%) F1 44.69 (%)
+Epoch: [023/030]
+TRAINING:	avg. loss 0.7825
+VALIDATION:	avg. loss 1.7663
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 55.95 (%) Prec 42.14 (%) Rec 55.95 (%) F1 44.26 (%)
+Epoch: [024/030]
+TRAINING:	avg. loss 0.7796
+VALIDATION:	avg. loss 1.7666
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 56.29 (%) Prec 42.45 (%) Rec 56.29 (%) F1 44.51 (%)
+Epoch: [025/030]
+TRAINING:	avg. loss 0.7750
+VALIDATION:	avg. loss 1.7392
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 56.45 (%) Prec 42.07 (%) Rec 56.45 (%) F1 44.44 (%)
+Epoch: [026/030]
+TRAINING:	avg. loss 0.7728
+VALIDATION:	avg. loss 1.7763
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 56.57 (%) Prec 42.53 (%) Rec 56.57 (%) F1 44.49 (%)
+Epoch: [027/030]
+TRAINING:	avg. loss 0.7691
+VALIDATION:	avg. loss 1.7608
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 55.73 (%) Prec 41.55 (%) Rec 55.73 (%) F1 43.90 (%)
+Epoch: [028/030]
+TRAINING:	avg. loss 0.7667
+VALIDATION:	avg. loss 1.7314
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 56.46 (%) Prec 41.85 (%) Rec 56.46 (%) F1 44.35 (%)
+Epoch: [029/030]
+TRAINING:	avg. loss 0.7640
+VALIDATION:	avg. loss 1.7315
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 57.18 (%) Prec 42.54 (%) Rec 57.18 (%) F1 45.10 (%)
+New best F1 45.10% at epoch 29, saving checkpoint to logs/deepconvlstm/6hz/loso_sbj_14/best_loso_sbj_14.pth.tar
+Epoch: [030/030]
+TRAINING:	avg. loss 0.7611
+VALIDATION:	avg. loss 1.7362
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) Acc 56.94 (%) Prec 42.54 (%) Rec 56.94 (%) F1 44.96 (%)
+
+FINAL RESULTS SUBJECT 14
+TRAINING:	avg. loss 0.86
+VALIDATION:	avg. loss 1.77
+
+		Avg. mAP 0.00 (%) mAP@0.3 0.00 (%) mAP@0.4 0.00 (%) mAP@0.5 0.00 (%) mAP@0.6 0.00 (%) mAP@0.7 0.00 (%) 
+		Acc 56.94 (%) Prec 42.54 (%) Rec 56.94 (%) F1 44.96 (%)
+
+Split 16 / 22
+Training data shape: (3336250, 14)
+Validation data shape: (130150, 14)
+Min/ Max values in training data: [-1.00, 1.00]
+Min/ Max values in validation data: [-0.94, 0.95]
+Number of learnable parameters for DeepConvLSTM: 487189
+DeepConvLSTM(
+  (conv1): Conv2d(1, 64, kernel_size=(2, 1), stride=(1, 1))
+  (conv2): Conv2d(64, 64, kernel_size=(2, 1), stride=(1, 1))
+  (conv3): Conv2d(64, 64, kernel_size=(2, 1), stride=(1, 1))
+  (conv4): Conv2d(64, 64, kernel_size=(2, 1), stride=(1, 1))
+  (lstm): LSTM(768, 128)
+  (dropout): Dropout(p=0.5, inplace=False)
+  (classifier): Linear(in_features=128, out_features=19, bias=True)
+  (activation): ReLU()
+  (gamma_function): gammaFunction()
+  (quantizer): UniformQuantizerSTE()
+)
+Class weights: [0.13142708 1.7357261  1.5679146  1.45967739 1.70235549 1.67959033
+ 1.48565043 1.59709346 1.55022339 1.50227629 1.69299946 1.58164259
+ 1.52796461 1.51876597 1.59383161 1.59539563 1.51849015 1.62539044
+ 1.57326714]

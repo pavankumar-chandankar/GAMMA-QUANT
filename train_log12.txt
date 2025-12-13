@@ -1,0 +1,22 @@
+Split 1 / 22
+Training data shape: (3214625, 14)
+Validation data shape: (251775, 14)
+Min/ Max values in training data: [-1.00, 1.00]
+Min/ Max values in validation data: [-1.00, 1.00]
+Number of learnable parameters for DeepConvLSTM: 499541
+DeepConvLSTM(
+  (conv1): Conv2d(1, 64, kernel_size=(3, 1), stride=(1, 1))
+  (conv2): Conv2d(64, 64, kernel_size=(3, 1), stride=(1, 1))
+  (conv3): Conv2d(64, 64, kernel_size=(3, 1), stride=(1, 1))
+  (conv4): Conv2d(64, 64, kernel_size=(3, 1), stride=(1, 1))
+  (lstm): LSTM(768, 128)
+  (dropout): Dropout(p=0.5, inplace=False)
+  (classifier): Linear(in_features=128, out_features=19, bias=True)
+  (activation): ReLU()
+  (gamma_function): gammaFunction()
+  (quantizer): UniformQuantizerSTE()
+)
+Class weights: [0.12827798 1.7705825  1.5889843  1.54307045 1.74074122 1.71919556
+ 1.52562095 1.64009576 1.61058584 1.56456144 1.70032722 1.58034561
+ 1.58238545 1.50711028 1.5889843  1.59889574 1.50189231 1.62282166
+ 1.59311409]
