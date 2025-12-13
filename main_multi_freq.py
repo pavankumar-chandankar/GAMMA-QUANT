@@ -7,7 +7,7 @@ from typing import Dict, List, Set
 import torch
 import yaml
 
-from models.train1 import run_inertial_expert_702010, test_multifreq_cascade
+from models.train_multi_freq import run_inertial_expert_702010, test_multifreq_cascade
 
 
 def load_config(config_path: str) -> Dict:
